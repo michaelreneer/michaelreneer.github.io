@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title -%}Blog | {{ SITENAME }}{%- endblock title %}
+
+{% block content -%}
+    <section id="archive" class="container">
+        <ol>
+            {%- for article in dates %}
+            {% if loop.index0 is even -%}
+            <li>
+                <article>
+                    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+                        <h2>{{ article.title }}</h2>
+                        <h3>{{ article.subtitle }}</h3>
+                    </a>
+                </article>
+            </li>
+            {%- endif %}
+            {%- endfor %}
+        </ol>
+        
+        <ol>
+            {%- for article in dates %}
+            {% if loop.index0 is odd -%}
+            <li>
+                <article>
+                    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+                        <h2>{{ article.title }}</h2>
+                        <h3>{{ article.subtitle }}</h3>
+                    </a>
+                </article>
+            </li>
+            {%- endif %}
+            {%- endfor %}
+        </ol>
+        
+        <br style="clear:both" />
+    </section>
+{%- endblock content %}

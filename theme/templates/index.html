@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title -%}{{ SITENAME }}{%- endblock title %}
+
+{% block content -%}
+    <section id="index" class="container">
+        {%- for article in dates[:3] %}
+        <article>
+            <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+                <h2>{{ article.title }}</h2>
+                
+                {{ article.summary }}
+                
+                {% include "disqus-count.html" %}
+            </a>
+        </article>
+        {%- endfor %}
+    </section>
+{%- endblock content %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title -%}{{ article.title|striptags }} | {{ SITENAME }}{%- endblock title %}
+
+{% block content -%}
+    <section id="article" class="container">
+        <article>
+            <header>
+                <hgroup>
+                    <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
+                    <h2>{{ article.subtitle }}</h2>
+                </hgroup>
+                <p><time title="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></p>
+            </header>
+            
+            {{ article.content }}
+            
+            <aside>
+                {% include "twitter-share.html" %}
+            </aside>
+            
+            <section>
+                {% include "disqus-comments.html" %}
+            </section>
+        </article>
+    </section>
+{%- endblock content %}

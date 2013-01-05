@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title -%}{{ page.title }} | {{ SITENAME }}{%- endblock title %}
+
+{% block content -%}
+    <section id="{{ page.slug }}" class="container">
+        {{ page.content }}
+    </section>
+{%- endblock content %}
