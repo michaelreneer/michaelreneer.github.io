@@ -1,18 +1,14 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- #
 
 import sys
 sys.path.append('.')
+
 from pelicanconf import *
 
-SITEURL = 'http://'
-
+# Basic
 DELETE_OUTPUT_DIRECTORY = True
+RELATIVE_URLS = False
+SITEURL = 'http://michaelreneer.com'
 
-# Following items are often useful when publishing
-
-# Uncomment following line for absolute URLs in production:
-#RELATIVE_URLS = False
-
-#DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
+# Theming
+GOOGLE_ANALYTICS = 'UA-36860769-1'
