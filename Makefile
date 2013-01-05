@@ -3,6 +3,7 @@ OUTPUTDIR=$(CURDIR)/output
 PUBLISHDIR=$(CURDIR)/../master
 CONFFILE=$(CURDIR)/pelicanconf.py
 PUBLISHCONF=$(CURDIR)/publishconf.py
+PUBLISHEXCLUDE=$(CURDIR)/excludes.txt
 
 help:
 	@echo 'Makefile for a pelican Web site                                        '
@@ -29,6 +30,6 @@ serve:
 
 publish:
 	pelican $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF)
-	# rsync -rv --delete --exclude-from $(PUBLISHEXCLUDE) $(OUTPUTDIR)/ $(PUBLISHDIR)
+	rsync -rv --delete --exclude-from $(PUBLISHEXCLUDE) $(OUTPUTDIR)/ $(PUBLISHDIR)
 
 .PHONY: help clean html regenerate serve publish
