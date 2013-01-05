@@ -1,0 +1,12 @@
+# OS
+.DS_Store
+
+# Python
+*.py[cod]
+
+# TextMate
+*.tmproj
+
+# Build
+output
+.webassets-cache
