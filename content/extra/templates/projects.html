@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title -%}Projects | {{ SITENAME }}{%- endblock title %}
+
+{% block content -%}
+    <section id="projects" class="container">
+        <ol>
+            {%- for page in pages if page.template == "project" %}
+            {% if loop.index0 % 2 == 0 -%}
+            <li>
+                <article>
+                    <a href="{{ SITEURL }}/{{ page.url }}" rel="bookmark" title="Permalink to {{ page.title|striptags }}">
+                        <h2>{{ page.title }}</h2>
+                        <h3>{{ page.subtitle }}</h3>
+                    </a>
+                </article>
+            </li>
+            {%- endif %}
+            {%- endfor %}
+        </ol>
+        
+        <ol>
+            {%- for page in pages if page.template == "project" %}
+            {% if loop.index0 % 2 != 0 -%}
+            <li>
+                <article>
+                    <a href="{{ SITEURL }}/{{ page.url }}" rel="bookmark" title="Permalink to {{ page.title|striptags }}">
+                        <h2>{{ page.title }}</h2>
+                        <h3>{{ page.subtitle }}</h3>
+                    </a>
+                </article>
+            </li>
+            {%- endif %}
+            {%- endfor %}
+        </ol>
+        
+        <br style="clear:both" />
+    </section>
+{%- endblock content %}
