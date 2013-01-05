@@ -23,6 +23,8 @@ EXTRA_TEMPLATES_PATHS = [
     'content/extra/templates',
 ]
 FILES_TO_COPY = (
+    ('extra/.nojekyll', '.nojekyll'),
+    ('extra/CNAME', 'CNAME'),
     # ('extra/icons/apple-touch-icon-114x114-precomposed.png',
     #     'apple-touch-icon-114x114-precomposed.png'),
     # ('extra/icons/apple-touch-icon-144x144-precomposed.png',
