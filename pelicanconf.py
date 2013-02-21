@@ -66,7 +66,7 @@ FEED_ATOM = 'feeds/all.atom.xml'
 TRANSLATION_FEED_ATOM = None
 
 # Theming
-#DISQUS_SITENAME = 'michaelreneer'
+DISQUS_SITENAME = 'michaelreneer'
 MENUITEMS = (
     ('Blog', 'blog/'),
     ('Projects', 'projects/'),
