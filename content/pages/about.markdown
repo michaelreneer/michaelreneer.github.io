@@ -8,22 +8,17 @@ truly enjoy is working with [Objective-C][] and [Cocoa Touch][], and anything
 mobile.
 
 During these last few of years I have helped architect, build, and design:
-[iOS][] applications;
-[ASP.NET MVC][] applications using [C#][], [Razor][], [HTML5][] and [Javascript][];
-[Bash][] scripts;
-web service layers;
-[Android][] applications;
-and I even flirted with mobile web frameworks like [Sencha][].
-I have
-patented ideas,
-integrated with social frameworks such as [Twitter][] and [Facebook][],
-and became a huge fan of [Git][].
+[iOS][] applications; [ASP.NET MVC][] applications using [C#][], [Razor][],
+[HTML5][] and [Javascript][]; [Bash][] scripts; web service layers; [Android][]
+applications; and I even flirted with mobile web frameworks like [Sencha][].
+I have patented ideas, integrated with social frameworks such as [Twitter][] and
+[Facebook][], and became a huge fan of [Git][].
 
 Going back further, I worked with [Flex][], [Java][], and [Maven][] to build
 everything from Kiosk software to common application frameworks.
 
-And before that, my life was an eclectic mix of [PHP][], [C++][], Java, HTML,
-CSS, Javascript and University classes.
+And before that, I spent my time tinkering with [PHP][], [C++][], Java, HTML,
+CSS, Javascript, and [Illustrator][] and going to University.
 
 Personal
 ----------
@@ -40,11 +35,10 @@ favorite games have strong investing mechanics: [18XX][], [Age of Steam][],
 
 I spend some of my time writing poetry.
 
-To add, I enjoy, longboarding, mountain biking, camping, snowshoeing, and
-snowboarding - though, I prefer snowshoeing to the others. I do not own a
-television and I find thought games like the [dollar auction][] fun. I am also
-convinced the most difficult part of my job is finding good names for classes,
-methods and properties.
+Seattle is my new home. I enjoy many outdoor activities: longboarding, mountain
+biking, camping, snowshoeing, and snowboarding - though, I prefer snowshoeing to
+the others. I do not own a television, I find thought games like the
+[dollar auction][] fun, and there is little better then a good [IPA][].
 
 Site
 ----------
@@ -63,26 +57,27 @@ Thanks.
 
 [profile picture]: /theme/images/profile-picture.png "Profile Picture"
 
-[android]: http:// "Android"
-[asp.net mvc]: http:// "ASP.NET MVC"
-[bash]: http:// "Bash"
-[cocoa touch]: http:// "Cocoa Touch"
-[c#]: http:// "C#"
-[c++]: http:// "C++"
-[facebook]: http:// "Facebook"
-[flex]: http:// "Flex"
-[git]: http:// "Git"
-[html5]: http:// "HTML5"
-[iOS]: http:// "iOS"
-[java]: http:// "Java"
-[javascript]: http:// "Javascript"
-[maven]: http:// "Maven"
-[objective-c]: http:// "Objective-C"
-[php]: http:// "PHP"
-[python]: http:// "Python"
-[razor]: http:// "Razor"
-[sencha]: http:// "Sencha"
-[twitter]: http:// "Twitter"
+[android]: http://developer.android.com "Android"
+[asp.net mvc]: http://www.asp.net/mvc "ASP.NET MVC"
+[bash]: http://www.gnu.org/software/bash/manual/bashref.html "Bash"
+[cocoa touch]: https://developer.apple.com/technologies/ios/cocoa-touch.html "Cocoa Touch"
+[c#]: http://msdn.microsoft.com/en-us/vstudio/hh341490.aspx "C#"
+[c++]: http://www.cplusplus.com "C++"
+[facebook]: https://developers.facebook.com "Facebook"
+[flex]: http://www.adobe.com/products/flex.html "Flex"
+[git]: http://git-scm.com "Git"
+[html5]: http://www.w3schools.com/html5/ "HTML5"
+[illustrator]: http://www.adobe.com/products/illustrator.html "Illustrator"
+[iOS]: http://developer.apple.com/technologies/ios/ "iOS"
+[java]: http://www.oracle.com/technetwork/java/index.html "Java"
+[javascript]: http://www.w3schools.com/js/ "Javascript"
+[maven]: http://maven.apache.org "Maven"
+[objective-c]: http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html "Objective-C"
+[php]: http://php.net "PHP"
+[python]: http://www.python.org "Python"
+[razor]: http://www.asp.net/web-pages/tutorials/basics/2-introduction-to-asp-net-web-programming-using-the-razor-syntax "Razor"
+[sencha]: http://www.sencha.com "Sencha"
+[twitter]: http://dev.twitter.com/ "Twitter"
 
 [18xx]: http://boardgamegeek.com/wiki/page/18xx "18XX"
 [age of steam]: http://boardgamegeek.com/boardgame/4098/age-of-steam "Age of Steam"
@@ -91,6 +86,7 @@ Thanks.
 [etsy]: http://www.etsy.com "Etsy"
 [hansa teutonica]: http://boardgamegeek.com/boardgame/43015/hansa-teutonica "Hansa Teutonica"
 [imperial]: http://boardgamegeek.com/boardgame/24181/imperial "Imperial"
+[ipa]: http://en.wikipedia.org/wiki/India_Pale_Ale "IPA"
 
 [cssmin]: https://github.com/zacharyvoase/cssmin "cssmin"
 [github]: http://github.com "GitHub"

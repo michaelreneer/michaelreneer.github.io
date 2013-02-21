@@ -9,10 +9,19 @@
             {% if loop.index0 % 2 == 0 -%}
             <li>
                 <article>
-                    <a href="{{ SITEURL }}/{{ page.url }}" rel="bookmark" title="Permalink to {{ page.title|striptags }}">
-                        <h2>{{ page.title }}</h2>
-                        <h3>{{ page.subtitle }}</h3>
-                    </a>
+                    <header>
+                        <h1>{{ page.title }}</h1>
+                    </header>
+                    
+                    {{ page.content }}
+                    
+                    <footer>
+                        {% set GITHUB_USER = page.github_user %}
+                        {% set GITHUB_REPO = page.github_repo %}
+                        {% include "github-fork.html" %}
+                        {% include "github-star.html" %}
+                        {% include "twitter-share.html" %}
+                    </footer>
                 </article>
             </li>
             {%- endif %}
@@ -24,10 +33,19 @@
             {% if loop.index0 % 2 != 0 -%}
             <li>
                 <article>
-                    <a href="{{ SITEURL }}/{{ page.url }}" rel="bookmark" title="Permalink to {{ page.title|striptags }}">
-                        <h2>{{ page.title }}</h2>
-                        <h3>{{ page.subtitle }}</h3>
-                    </a>
+                    <header>
+                        <h1>{{ page.title }}</h1>
+                    </header>
+                    
+                    {{ page.content }}
+                    
+                    <footer>
+                        {% set GITHUB_USER = page.github_user %}
+                        {% set GITHUB_REPO = page.github_repo %}
+                        {% include "github-fork.html" %}
+                        {% include "github-star.html" %}
+                        {% include "twitter-share.html" %}
+                    </footer>
                 </article>
             </li>
             {%- endif %}
