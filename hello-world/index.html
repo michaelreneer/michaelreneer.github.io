@@ -1,0 +1,167 @@
+<!doctype html>
+<!--[if lt IE 9]><html lang="en" class="ie"><![endif]-->
+<!--[if gte IE 9]><!--><html lang="en"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Hello World | Michael Reneer</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="author" content="Michael Kelly Reneer">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <link href="http://michaelreneer.com/theme/css/normalize.min.css?cdc9377a" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/pygments.min.css?cacdaf45" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/main.min.css?cd8bc45d" rel="stylesheet">    
+    <link href="http://localhost:8000/feeds/all.atom.xml" rel="alternate" type="application/atom+xml" title="Michael Reneer Atom Feed" />    
+        
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script>window.html5 || document.write('<script src="http://michaelreneer.com/theme/js/html5shiv.js"><\/script>')</script>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <div>
+            <h2><a href="http://michaelreneer.com" title="">Michael Reneer</a></h2>
+            
+            <nav>
+                <ul>                    <li><a href="http://michaelreneer.com/blog/" title="Blog">Blog</a></li>                    <li><a href="http://michaelreneer.com/projects/" title="Projects">Projects</a></li>                    <li><a href="http://michaelreneer.com/about/" title="About">About</a></li>                </ul>
+            </nav>        </div>
+    </header>
+    
+    <section id="article" class="container">
+        <article>
+            <header>
+                <hgroup>
+                    <h1><a href="http://michaelreneer.com/hello-world/" rel="bookmark" title="Permalink to Hello World">Hello World</a></h1>
+                    <h2>Bored + learning python = a blog written with pelican</h2>
+                </hgroup>
+                <time title="2012-12-09T00:00:00">Sun 09 December 2012</time>
+            </header>
+            
+            <p>I have recently begun working professionally with <a href="http://www.python.org" title="Python">Python</a> and decided in
+order to truly have any <em>fun</em>, I needed to dive in with some of my free time.
+For a while I have been interested in starting a blog. Being more keen on
+static site generation than <a href="http://wordpress.com" title="WordPress">WordPress</a> configuration and wanting to learn
+python - I started looking for a python solution for a personal blog.</p>
+<p>After a few minutes of googling I gave <a href="http://hyde.github.com" title="Hyde">Hyde</a> a try. Installed everything, got
+everything working, building, got real excited, etc... and then decided it
+wasn't for me. Not really sure what turned me off. Kept looking and found
+<a href="https://github.com/getpelican/pelican" title="Pelican">Pelican</a> which had some great documentation and lot of activity on the
+project. Now here you are reading a hello world blog entry written in
+<a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a>, built with pelican, and hosted on <a href="http://github.com" title="GitHub">GitHub</a>.</p>
+<p>I am currently using OS X and the Terminal app. Here's what I did...</p>
+<h2>Environment</h2>
+<p>First install packages <a href="http://pypi.python.org/pypi/pip" title="pip">pip</a>, <a href="http://pypi.python.org/pypi/virtualenv" title="virtualenv">virtualenv</a>, and <a href="http://pypi.python.org/pypi/virtualenvwrapper" title="virtualenvwrapper">virtualenvwrapper</a>.</p>
+<div class="codehilite"><pre><span class="go">sudo easy_install pip</span>
+<span class="go">sudo pip install virtualenv</span>
+<span class="go">sudo pip install virtualenvwrapper</span>
+</pre></div>
+
+
+<p>Update <code>~/.bash_profile</code> by adding:</p>
+<div class="codehilite"><pre><span class="nb">export </span><span class="nv">WORKON_HOME</span><span class="o">=</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span>/.virtualenvs
+<span class="nb">export </span><span class="nv">PROJECT_HOME</span><span class="o">=</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span>/Documents/Developer
+<span class="nb">export </span><span class="nv">VIRTUALENVWRAPPER_SCRIPT</span><span class="o">=</span>/usr/local/bin/virtualenvwrapper.sh
+<span class="nb">source</span> /usr/local/bin/virtualenvwrapper_lazy.sh
+<span class="nb">export </span><span class="nv">PIP_VIRTUALENV_BASE</span><span class="o">=</span><span class="k">${</span><span class="nv">WORKON_HOME</span><span class="k">}</span>
+<span class="nb">export </span><span class="nv">PIP_RESPECT_VIRTUALENV</span><span class="o">=</span><span class="nb">true</span>
+</pre></div>
+
+
+<p>Please read the <a href="http://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html" title="virtualenvwrapper goodies">virtualenvwrapper reference</a>.</p>
+<h2>Pelican</h2>
+<p>Create the virtual environment.</p>
+<div class="codehilite"><pre><span class="go">mkvirtualenv --no-site-packages michaelreneer.github.com</span>
+</pre></div>
+
+
+<p>Setup the project.</p>
+<div class="codehilite"><pre><span class="go">mkdir ~/Documents/Developer/michaelreneer.github.com</span>
+<span class="go">cd ~/Documents/Developer/michaelreneer.github.com</span>
+<span class="go">setvirtualenvproject</span>
+</pre></div>
+
+
+<p>Install packages.</p>
+<div class="codehilite"><pre><span class="go">pip install pelican Markdown</span>
+</pre></div>
+
+
+<p>Run pelican quickstart.</p>
+<div class="codehilite"><pre><span class="go">pelican-quickstart</span>
+</pre></div>
+
+
+<p>Please read the <a href="http://pelican.readthedocs.org/en/3.1.1/getting_started.html" title="Pelican Documentation">pelican documentation</a>.</p>
+<h2>GitHub</h2>
+<p>I also experimented a little with how the project lives in GitHub and locally.
+To start, the static html in the <code>master</code> branch of the project named
+<code>USERNAME.github.com</code> is served up as your user page. Free hosting.</p>
+<p>I first tried organizing the source that generated the html as a subdirectory in
+the <code>master</code> branch. This was nice because I had only one branch to manage; but
+because everything was in one branch, managing pull requests would be more
+complicated since I would only want to merge changes that updated the source.</p>
+<p>So I ended up pushing the source to the <code>source</code> branch and the content to the
+<code>master</code> branch. This way I can automatically decline all pull requests to
+the <code>master</code> branch. Locally, I have each branch cloned into a different
+directory named for the branch.</p>
+<p>I will eventually script the process so that immediately after I
+push to the <code>source</code> branch, my pelican build runs, copies its output to the
+<code>master</code> branch, and finished by pushing the <code>master</code> branch. Eliminating any
+branch switching antics.</p>
+            
+            <aside>
+                <p>tags: 
+                    <a href="http://michaelreneer.com/tag/blog.html">blog</a>
+                    <a href="http://michaelreneer.com/tag/pelican.html">pelican</a>
+                                    </p>                
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="michaelreneer" data-count="none" data-dnt="true"></a>
+
+<script>
+    !function(d,s,id){
+        var js,fjs=d.getElementsByTagName(s)[0];
+        if(!d.getElementById(id)){
+            js=d.createElement(s);
+            js.id=id;
+            js.src='//platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js,fjs);
+        }
+    }(document,'script','twitter-wjs');
+</script>                
+                <br style="clear:both" />
+            </aside>
+            
+            <section class="comments">
+                <div id="disqus_thread"></div>
+
+<script type="text/javascript">
+    var disqus_shortname = 'michaelreneer';
+    (function() {
+        var dsq = document.createElement('script');
+        dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        dsq.type = 'text/javascript';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>            </section>
+        </article>
+    </section>    
+    <footer>
+        <ul>            <li><a href="mailto:contact@michaelreneer.com" title="Email">Email</a></li>            <li><a href="http://github.com/michaelreneer" title="GitHub">GitHub</a></li>            <li><a href="http://twitter.com/michaelreneer" title="Twitter">Twitter</a></li>            <li><a href="http://www.linkedin.com/pub/michael-reneer/20/26/9a0/" title="Linkedin">Linkedin</a></li>            
+            <li><a href="http://localhost:8000/feeds/all.atom.xml" title="Feed" rel="alternate" type="application/atom+xml">Feed</a></li>            
+                        
+            <li>&copy; 2012 Michael Kelly Reneer.</li>
+        </ul>    </footer>
+    
+    <script>
+    var _gaq = [['_setAccount', 'UA-36860769-1'], ['_trackPageview']];
+    (function(d, t) {
+        var g = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        g.src = '//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g, s);
+    })(document, 'script');
+</script></body>
+</html>
