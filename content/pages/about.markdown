@@ -7,18 +7,18 @@ I am starting to learning [Python][] - it's slowly growing on me, but what I
 truly enjoy is working with [Objective-C][] and [Cocoa Touch][], and anything
 mobile.
 
-During these last few of years I have helped architect, build, and design:
-[iOS][] applications; [ASP.NET MVC][] applications using [C#][], [Razor][],
-[HTML5][] and [Javascript][]; [Bash][] scripts; web service layers; [Android][]
+During these last few years I have helped architect, build, and design: [iOS][]
+applications; [ASP.NET MVC][] applications using [C#][], [Razor][], [HTML5][]
+and [Javascript][]; [Bash][] scripts; web service layers; [Android][]
 applications; and I even flirted with mobile web frameworks like [Sencha][].
 I have patented ideas, integrated with social frameworks such as [Twitter][] and
 [Facebook][], and became a huge fan of [Git][].
 
 Going back further, I worked with [Flex][], [Java][], and [Maven][] to build
-everything from Kiosk software to common application frameworks.
+everything from kiosk software to common application frameworks.
 
 And before that, I spent my time tinkering with [PHP][], [C++][], Java, HTML,
-CSS, Javascript, and [Illustrator][] and going to University.
+CSS, Javascript, and [Illustrator][], and going to University.
 
 Personal
 ----------
@@ -26,30 +26,30 @@ Personal
 ![Profile Picture][]
 
 I love my family most. My wife can be found selling hand-made quiet books on her
-[Etsy][] store [Birdie And Button][] and my daughter is very busy learning to
+[Etsy][] store [Birdie And Buttons][]. My daughter is very busy learning to
 talk.
 
 I play as much soccer as possible when not playing board games. Many of my
 favorite games have strong investing mechanics: [18XX][], [Age of Steam][],
-[Hansa Teutonica][], and [Imperial][]; and can take longer then 3 hours to play.
+[Hansa Teutonica][], and [Imperial][], and can take longer than 3 hours to play.
 
 I spend some of my time writing poetry.
 
 Seattle is my new home. I enjoy many outdoor activities: longboarding, mountain
-biking, camping, snowshoeing, and snowboarding - though, I prefer snowshoeing to
+biking, camping, snowshoeing, and snowboarding - though I prefer snowshoeing to
 the others. I do not own a television, I find thought games like the
-[dollar auction][] fun, and there is little better then a good [IPA][].
+[dollar auction][] fun, and there is little better than a good [IPA][].
 
 Site
 ----------
 
 The content of this site is written in [Markdown][] and built with [Pelican][]
 using a custom theme I built based on [HTML5 Boilerplate][]. The source and
-theme for the [this project][] can be found on [GitHub][] and the site is hosted
+theme for [this project][] can be found on [GitHub][], and the site is hosted
 on [GitHub Pages][].
 
 In addition to Pelican and Markdown, I am using [Jinja][], [Pygments][],
-[webassets][], and [cssmin][] either as a plugin to or as a dependency of
+[webassets][], and [cssmin][] either as a plugin for, or as a dependency of,
 Pelican. To make everything a bit more social I have included the
 [Twitter buttons][] and the unofficial [GitHub buttons][].
 
@@ -81,7 +81,7 @@ Thanks.
 
 [18xx]: http://boardgamegeek.com/wiki/page/18xx "18XX"
 [age of steam]: http://boardgamegeek.com/boardgame/4098/age-of-steam "Age of Steam"
-[birdie and button]: http://www.etsy.com/shop/BirdieAndButtons "Birdie And Buttons"
+[birdie and buttons]: http://www.etsy.com/shop/BirdieAndButtons "Birdie And Buttons"
 [dollar auction]: http://en.wikipedia.org/wiki/Dollar_auction "Dollar Auction"
 [etsy]: http://www.etsy.com "Etsy"
 [hansa teutonica]: http://boardgamegeek.com/boardgame/43015/hansa-teutonica "Hansa Teutonica"

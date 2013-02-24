@@ -7,7 +7,7 @@ Summary: <p>I have recently begun working professionally with Python and decided
 I have recently begun working professionally with [Python][] and decided in
 order to truly have any *fun*, I needed to dive in with some of my free time.
 For a while I have been interested in starting a blog. Being more keen on
-static site generation then [WordPress][] configuration and wanting to learn
+static site generation than [WordPress][] configuration and wanting to learn
 python - I started looking for a python solution for a personal blog.
 
 After a few minutes of googling I gave [Hyde][] a try. Installed everything, got
@@ -17,7 +17,7 @@ wasn't for me. Not really sure what turned me off. Kept looking and found
 project. Now here you are reading a hello world blog entry written in
 [Markdown][], built with pelican, and hosted on [GitHub][].
 
-I am currently using OS X and the Terminal app. Here's what I did ...
+I am currently using OS X and the Terminal app. Here's what I did...
 
 Environment
 ----------
