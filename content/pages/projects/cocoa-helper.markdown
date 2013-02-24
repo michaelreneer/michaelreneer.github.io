@@ -1,5 +1,5 @@
 Title: Cocoa Helper
-Template: project
+IS_PROJECT: yes
 GITHUB_USER: michaelreneer
 GITHUB_REPO: CocoaHelper
 

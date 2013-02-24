@@ -5,7 +5,7 @@
 {% block content -%}
     <section id="projects" class="container">
         <ol>
-            {%- for page in pages if page.template == "project" %}
+            {%- for page in pages if page.is_project == "yes" %}
             {% if loop.index0 % 2 == 0 -%}
             <li>
                 <article>
@@ -29,7 +29,7 @@
         </ol>
         
         <ol>
-            {%- for page in pages if page.template == "project" %}
+            {%- for page in pages if page.is_project == "yes" %}
             {% if loop.index0 % 2 != 0 -%}
             <li>
                 <article>

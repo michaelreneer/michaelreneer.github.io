@@ -1,5 +1,5 @@
 Title: Daily Self
-Template: project
+IS_PROJECT: yes
 GITHUB_USER: michaelreneer
 GITHUB_REPO: DailySelf
 

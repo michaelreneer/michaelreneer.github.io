@@ -23,7 +23,7 @@ CSS, Javascript, and [Illustrator][], and going to University.
 Personal
 ----------
 
-![Profile Picture][]
+<!-- ![Profile Picture][] -->
 
 I love my family most. My wife can be found selling hand-made quiet books on her
 [Etsy][] store [Birdie And Buttons][]. My daughter is very busy learning to
