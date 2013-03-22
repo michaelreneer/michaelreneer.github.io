@@ -308,6 +308,10 @@ body > footer ul {
     text-align: justify;
 }
 
+#article ul {
+    list-style-type: none;
+}
+
 #article .codehilite {
 /*    background-color: #fafafa;*/
 /*    background-color: #111111;*/
