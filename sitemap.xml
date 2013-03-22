@@ -5,28 +5,49 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://michaelreneer.com/index.html</loc>
-<lastmod>2013-02-23T23:24:23-00:00</lastmod>
+<lastmod>2013-03-22T00:43:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://michaelreneer.com/about/</loc>
-<lastmod>2013-02-23T23:24:23-00:00</lastmod>
+<lastmod>2013-03-22T00:43:33-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://michaelreneer.com/cocoa-helper/</loc>
-<lastmod>2013-02-23T23:24:23-00:00</lastmod>
+<lastmod>2013-03-22T00:43:33-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://michaelreneer.com/daily-self/</loc>
-<lastmod>2013-02-23T23:24:23-00:00</lastmod>
+<lastmod>2013-03-22T00:43:33-00:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://michaelreneer.com/save-me/</loc>
+<lastmod>2013-03-21T00:00:00-00:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://michaelreneer.com/objective-c-style-guide/</loc>
+<lastmod>2013-03-02T00:00:00-00:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://michaelreneer.com/music-box/</loc>
+<lastmod>2013-02-22T00:00:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
