@@ -2,7 +2,7 @@ Title: Hello World
 Date: 2012-12-9
 Tags: blog, pelican
 Subtitle: Bored + learning python = a blog written with pelican
-Summary: <p>I have recently begun working professionally with Python and decided in order to truly have any fun, I needed to dive in with some of my free time. For a while I have been interested in starting a blog. Being more keen on static site generation then WordPress configuration ... </p>
+Summary: <p>I have recently begun working professionally with Python and decided in order to truly have any fun, I needed to dive in with some of my free time. For a while I have been interested in starting a blog. Being more keen on static site generation then WordPress configuration ...</p>
 
 I have recently begun working professionally with [Python][] and decided in
 order to truly have any *fun*, I needed to dive in with some of my free time.

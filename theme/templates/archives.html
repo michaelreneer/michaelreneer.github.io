@@ -11,7 +11,11 @@
                 <article>
                     <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
                         <h2>{{ article.title }}</h2>
+                        {% if article.subtitle -%}
                         <h3>{{ article.subtitle }}</h3>
+                        {%- else -%}
+                        <h3>{{ article.summary[:article.summary.index('<br>')] }}</h3>
+                        {%- endif %}
                     </a>
                 </article>
             </li>
@@ -26,7 +30,11 @@
                 <article>
                     <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
                         <h2>{{ article.title }}</h2>
+                        {% if article.subtitle -%}
                         <h3>{{ article.subtitle }}</h3>
+                        {%- else -%}
+                        <h3>{{ article.summary[:article.summary.index('<br>')] }}</h3>
+                        {%- endif %}
                     </a>
                 </article>
             </li>
