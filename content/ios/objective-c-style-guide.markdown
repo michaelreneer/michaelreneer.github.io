@@ -27,7 +27,10 @@ Whitespace
 Structure
 ----------
 
-- Header files should only declare the public interface.
+- Only define the public interface in the header.
+- Only `#import` the superclass, adopted protocols, and enums in the header.
+- Don't declare methods in the private interface.
+- Don't put two semicolons on the same line.
 - Use #pragma marks to logically group code.
 
 Naming
