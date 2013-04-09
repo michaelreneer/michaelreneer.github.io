@@ -58,7 +58,10 @@ currently being used when joining a project. In the absence of that:</p>
 </ul>
 <h2>Structure</h2>
 <ul>
-<li>Header files should only declare the public interface.</li>
+<li>Only define the public interface in the header.</li>
+<li>Only <code>#import</code> the superclass, adopted protocols, and enums in the header.</li>
+<li>Don't declare methods in the private interface.</li>
+<li>Don't put two semicolons on the same line.</li>
 <li>Use #pragma marks to logically group code.</li>
 </ul>
 <h2>Naming</h2>
