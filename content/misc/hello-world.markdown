@@ -24,7 +24,7 @@ Environment
 
 First install packages [pip][], [virtualenv][], and [virtualenvwrapper][].
 
-    :::console
+    :::bash
     sudo easy_install pip
     sudo pip install virtualenv
     sudo pip install virtualenvwrapper
@@ -46,24 +46,24 @@ Pelican
 
 Create the virtual environment.
 
-    :::console
+    :::bash
     mkvirtualenv --no-site-packages michaelreneer.github.com
 
 Setup the project.
 
-    :::console
+    :::bash
     mkdir ~/Documents/Developer/michaelreneer.github.com
     cd ~/Documents/Developer/michaelreneer.github.com
     setvirtualenvproject
 
 Install packages.
 
-    :::console
+    :::bash
     pip install pelican Markdown
 
 Run pelican quickstart.
 
-    :::console
+    :::bash
     pelican-quickstart
 
 Please read the [pelican documentation][].
