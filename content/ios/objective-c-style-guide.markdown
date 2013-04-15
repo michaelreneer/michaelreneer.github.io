@@ -2,7 +2,7 @@ Title: Objective-C Style Guide
 Date: 2013-3-2
 Tags: ios, style
 Subtitle: reading code can be difficult
-Summary: <p>Reading code can be difficult. Maybe you didn't write it; maybe seventeen people touched it before you. My preference is to conform to whatever style is currently being used when joining a project. In the absence of ...</p>
+Summary: <p>Reading code can be difficult. Maybe you didn't write it; maybe seventeen people touched it before you. My preference is to conform to whatever style is currently being used when joining a project. In the absence of...</p>
 
 Reading code can be difficult. Maybe you didn't write it; maybe seventeen people
 touched it before you. My preference is to conform to whatever style is
