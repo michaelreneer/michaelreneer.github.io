@@ -3,15 +3,39 @@
 {% block title -%}{{ SITENAME }}{%- endblock title %}
 
 {% block content -%}
-    <section id="index">
-        {%- for article in dates[:3] %}
-        <article>
-            <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
-                <h2>{{ article.title }}</h2>
-                
-                {{ article.summary }}
-            </a>
-        </article>
-        {%- endfor %}
-    </section>
+    <!--
+    {% set article = dates[0] %}
+        
+    <article class="article-full">
+        <header>
+            <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
+            <h2>{{ article.subtitle }}</h2>
+            <time title="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+        </header>
+        
+        {{ article.content }}
+        
+        <aside class="clearfix">
+            {% if article.tags -%}
+            <p>tags: 
+                {% for tag in article.tags -%}
+                <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+                {% endfor %}
+            </p>
+            {%- endif %}
+            
+            {% include "twitter-share.html" %}
+        </aside>
+    </article>
+    -->
+    
+    {%- for article in dates[0:5] %}
+    <article class="article-summary">
+        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+            <h2>{{ article.title }}</h2>
+            
+            {{ article.summary }}
+        </a>
+    </article>
+    {%- endfor %}
 {%- endblock content %}

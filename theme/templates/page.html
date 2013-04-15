@@ -3,7 +3,7 @@
 {% block title -%}{{ page.title }} | {{ SITENAME }}{%- endblock title %}
 
 {% block content -%}
-    <section id="{{ page.slug }}">
+    <article class="article-full">
         {{ page.content }}
-    </section>
+    </article>
 {%- endblock content %}

@@ -3,35 +3,29 @@
 {% block title -%}{{ article.title|striptags }} | {{ SITENAME }}{%- endblock title %}
 
 {% block content -%}
-    <section id="article">
-        <article>
-            <header>
-                <hgroup>
-                    <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
-                    <h2>{{ article.subtitle }}</h2>
-                </hgroup>
-                <time title="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
-            </header>
+    <article class="article-full">
+        <header>
+            <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
+            <h2>{{ article.subtitle }}</h2>
+            <time title="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+        </header>
+        
+        {{ article.content }}
+        
+        <aside class="clearfix">
+            {% if article.tags -%}
+            <span>tags: 
+                {% for tag in article.tags -%}
+                <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+                {% endfor %}
+            </span>
+            {%- endif %}
             
-            {{ article.content }}
-            
-            <aside>
-                {% if article.tags -%}
-                <p>tags: 
-                    {% for tag in article.tags -%}
-                    <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
-                    {% endfor %}
-                </p>
-                {%- endif %}
-                
-                {% include "twitter-share.html" %}
-                
-                <br style="clear:both" />
-            </aside>
-            
-            <section class="comments">
-                {% include "disqus-comments.html" %}
-            </section>
-        </article>
-    </section>
+            {% include "twitter-share.html" %}
+        </aside>
+        
+        <section class="comments">
+            {% include "disqus-comments.html" %}
+        </section>
+    </article>
 {%- endblock content %}

@@ -3,55 +3,49 @@
 {% block title -%}Projects | {{ SITENAME }}{%- endblock title %}
 
 {% block content -%}
-    <section id="projects" class="row">
-        <ol class="span6">
+    <div class="row">
+        <div class="span6">
             {%- for page in pages if page.is_project == "yes" %}
             {% if loop.index0 % 2 == 0 -%}
-            <li>
-                <article>
-                    <header>
-                        <h1>{{ page.title }}</h1>
-                    </header>
-                    
-                    {{ page.content }}
-                    
-                    <footer>
-                        {% set GITHUB_USER = page.github_user %}
-                        {% set GITHUB_REPO = page.github_repo %}
-                        {% include "github-fork.html" %}
-                        {% include "github-star.html" %}
-                        {% include "twitter-share.html" %}
-                    </footer>
-                </article>
-            </li>
+            <article class="project-summary">
+                <header>
+                    <h2>{{ page.title }}</h2>
+                </header>
+                
+                {{ page.content }}
+                
+                <footer>
+                    {% set GITHUB_USER = page.github_user %}
+                    {% set GITHUB_REPO = page.github_repo %}
+                    {% include "github-fork.html" %}
+                    {% include "github-star.html" %}
+                    {% include "twitter-share.html" %}
+                </footer>
+            </article>
             {%- endif %}
             {%- endfor %}
-        </ol>
+        </div>
         
-        <ol class="span6">
+        <div class="span6">
             {%- for page in pages if page.is_project == "yes" %}
             {% if loop.index0 % 2 != 0 -%}
-            <li>
-                <article>
-                    <header>
-                        <h1>{{ page.title }}</h1>
-                    </header>
-                    
-                    {{ page.content }}
-                    
-                    <footer>
-                        {% set GITHUB_USER = page.github_user %}
-                        {% set GITHUB_REPO = page.github_repo %}
-                        {% include "github-fork.html" %}
-                        {% include "github-star.html" %}
-                        {% include "twitter-share.html" %}
-                    </footer>
-                </article>
-            </li>
+            <article class="project-summary">
+                <header>
+                    <h2>{{ page.title }}</h2>
+                </header>
+                
+                {{ page.content }}
+                
+                <footer>
+                    {% set GITHUB_USER = page.github_user %}
+                    {% set GITHUB_REPO = page.github_repo %}
+                    {% include "github-fork.html" %}
+                    {% include "github-star.html" %}
+                    {% include "twitter-share.html" %}
+                </footer>
+            </article>
             {%- endif %}
             {%- endfor %}
-        </ol>
-        
-        <br style="clear:both" />
-    </section>
+        </div>
+    </div>
 {%- endblock content %}
