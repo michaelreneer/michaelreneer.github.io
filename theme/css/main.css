@@ -1,19 +1,22 @@
 /* Common */
 
-* {
-    margin: 0px;
-    padding: 0px;
+a {
+    color: #333333;
+    text-decoration: none;
 }
 
-a {
-    color: #444444;
-    text-decoration: none;
+a:hover,
+a:focus {
+    color: #ff6633;
 }
 
 body {
     background-color: #ffffff;
-    color: #444444;
+    color: #333333;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0px;
 }
 
 /* Header */
@@ -21,20 +24,12 @@ body {
 body > header {
     background-color: #f4f4f4;
     border-bottom: 2px solid #cccccc;
-    height: 80px;
-    margin: 0px auto 40px auto;
-}
-
-body > header div {
-    height: 100%;
-    margin: 0px auto;
-    position: relative;
-    width: 640px;
+    line-height: 25px;
+    margin: 0px 0px 40px 0px;
 }
 
 body > header a {
     display: inline-block;
-    padding: 1px 0px;
     text-transform: capitalize;
     
     -moz-transition: all 0.1s ease-out;
@@ -45,7 +40,6 @@ body > header a {
 }
 
 body > header a:hover {
-    color: #ff6633;
     
     -moz-transform: scale(1.10);
     -ms-transform: scale(1.10);
@@ -55,37 +49,37 @@ body > header a:hover {
 }
 
 body > header h2 {
-    bottom: 10px;
-    font-size: 1.2em;
+    float: left;
     font-weight: normal;
-    left: 0px;
-    margin: 0px;
-    position: absolute;
+    margin: 10px 0px;
 }
 
 body > header nav {
-    bottom: 10px;
-    position: absolute;
-    right: 0px;
+    float: right;
+    margin: 10px 0px;
 }
 
 body > header nav li {
-    display: inline;
-    margin: 0px 0px 0px 20px;
+    display: inline-block;
+    margin: 0px 0px 0px 15px;
+}
+
+body > header nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* Footer */
 
-body > footer {
+.container > footer {
     border-top: 2px solid #cccccc;
     color: #888888;
     font-size: 0.8em;
-    height: 80px;
-    margin: 40px auto 0px auto;
-    width: 640px;
+    margin: 40px 0px 0px 0px;
 }
 
-body > footer a {
+.container > footer a {
     color: #888888;
     display: inline-block;
     text-transform: uppercase;
@@ -97,7 +91,7 @@ body > footer a {
     transition: all 0.1s ease-out;
 }
 
-body > footer a:hover {
+.container > footer a:hover {
     color: #ff6633;
     
     -moz-transform: scale(1.10);
@@ -107,155 +101,62 @@ body > footer a:hover {
     transform: scale(1.10);
 }
 
-body > footer li {
-    display: inline;
+.container > footer li {
+    display: inline-block;
     margin: 0px 5px;
 }
 
-body > footer ul {
-    margin: 20px 0px 0px 0px;
+.container > footer ul {
+    list-style: none;
+    margin: 20px 0px;
+    padding: 0px;
     text-align: center;
-}
-
-/* Base */
-
-.container {
-    margin: 40px auto 80px auto;
-    width: 640px;
 }
 
 /* Article */
 
-/* 404 */
+article {
+    margin: 0px 0px 20px 0px;
+}
 
-/* About */
-
-#about a {
+.article-full a {
     font-weight: bold;
 }
 
-#about a:hover {
+.article-full a:hover {
     color: #ff6633;
     text-decoration: underline;
 }
 
-#about h2 {
-    font-size: 1.4em;
-    line-height: 1.4em;
-    margin: 20px 0px;
-}
-
-#about p {
-    line-height: 1.4em;
-    margin: 20px 0px;
-    text-align: justify;
-}
-
-#about img {
-    float: right;
-    height: 250px;
-    margin: 0px 0px 20px 20px;
-    width: 200px;
-}
-
-/* Archive */
-
-#archive a {
-    background-color: #fafafa;
-    border: 1px solid #dddddd;
-    border-radius: 4px;
-    box-shadow: 0px 0px 4px 0px #dddddd;
-    display: block;
-    
-    -moz-transition: all 0.1s ease-out;
-    -ms-transition: all 0.1s ease-out;
-    -o-transition: all 0.1s ease-out;
-    -webkit-transition: all 0.1s ease-out;
-    transition: all 0.1s ease-out;
-}
-
-#archive a:hover {
-    border: 1px solid #ff6633;
-    box-shadow: 0px 0px 3px 0px #ffaa99;
-    color: #ff6633;
-    
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-}
-
-#archive h2 {
-    font-size: 1.2em;
-    font-weight: normal;
-    line-height: 1.4em;
-    margin: 10px 5px;
-    text-align: center;
-}
-
-#archive h3 {
-    font-size: 1em;
-    font-weight: normal;
-    line-height: 1.4em;
-    margin: 10px 20px;
-    text-align: center;
-}
-
-#archive li + li {
-    margin: 20px 0px 0px 0px;
-}
-
-#archive ol {
-    float: left;
-    list-style-type: none;
-    width: 310px;
-}
-
-#archive ol + ol {
-    margin: 0px 0px 0px 20px;
-}
-
-/* Article */
-
-#article a {
-    font-weight: bold;
-}
-
-#article a:hover {
-    color: #ff6633;
-    text-decoration: underline;
-}
-
-#article aside {
+.article-full aside {
     margin: 40px 0px;
 }
 
-#article aside iframe {
+.article-full aside iframe {
     float: right;
 }
 
-#article aside p {
+.article-full aside span {
     float: left;
-    margin: 0px;
 }
 
-#article blockquote {
-}
-
-#article h2 {
-    font-size: 1.4em;
-    line-height: 1.4em;
+.article-full h2 {
+    font-size: 1.7em;
     margin: 20px 0px;
 }
 
-#article header {
+.article-full h3 {
+    font-size: 1.5em;
+    margin: 20px 0px;
+}
+
+.article-full header {
+    line-height: normal;
     margin: 0px 0px 40px 0px;
 }
 
-#article header a {
+.article-full header a {
     display: inline-block;
-    text-transform: capitalize;
     
     -moz-transition: all 0.1s ease-out;
     -ms-transition: all 0.1s ease-out;
@@ -264,7 +165,7 @@ body > footer ul {
     transition: all 0.1s ease-out;
 }
 
-#article header a:hover {
+.article-full header a:hover {
     color: #ff6633;
     
     -moz-transform: scale(1.10);
@@ -274,68 +175,59 @@ body > footer ul {
     transform: scale(1.10);
 }
 
-#article header h1 {
-    font-size: 1.7em;
-    line-height: 1.4em;
-    margin: 0px;
-    text-transform: capitalize;
+.article-full header h1 {
+    font-size: 1.9em;
+    margin: 0px 0px 5px 0px;
 }
 
-#article header h2 {
-    font-size: 1em;
+.article-full header h2 {
+    font-size: 1.0em;
     font-weight: normal;
-    line-height: 1.4em;
-    margin: 0px;
+    margin: 5px 0px;
 }
 
-#article header time {
-    color: #888888;
+.article-full header time {
     display: block;
+    color: #888888;
     font-size: 0.8em;
     font-variant: small-caps;
-    line-height: 1.4em;
+    margin: 5px 0px 0px 0px;
 }
 
-#article img {
+.article-full img {
     background-color: #fafafa;
     border: 1px solid #cccccc;
     padding: 5px;
 }
 
-#article p {
-    line-height: 1.4em;
+.article-full p {
     margin: 20px 0px;
     text-align: justify;
 }
 
-#article ul {
-    list-style-type: none;
-}
-
-#article .codehilite {
-/*    background-color: #fafafa;*/
-/*    background-color: #111111;*/
+.article-full .codehilite {
     background-color: #222222;
-    border-bottom: 1px solid #cccccc;
-    border-top: 1px solid #cccccc;
+    border: 1px solid #cccccc;
+    color: #ffffff;
     margin: 20px 10px;
     padding: 10px;
 }
 
-#article .codehilite pre {
+.article-full .codehilite pre {
     font-size: 0.8em;
-    line-height: 1.4em;
+    margin: 0px;
+    overflow: auto;
+    white-space: pre;
 }
 
-#article .comments {
+.article-full .comments {
     border-top: 2px solid #cccccc;
-    margin: 60px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
     padding: 20px 0px 0px 0px;
 }
 
-/* Index */
-
-#index a {
+.article-link a,
+.article-summary a {
     background-color: #fafafa;
     border: 1px solid #dddddd;
     border-radius: 4px;
@@ -349,7 +241,8 @@ body > footer ul {
     transition: all 0.1s ease-out;
 }
 
-#index a:hover {
+.article-link a:hover,
+.article-summary a:hover {
     border: 1px solid #ff6633;
     box-shadow: 0px 0px 3px 0px #ffaa99;
     color: #ff6633;
@@ -361,26 +254,36 @@ body > footer ul {
     transform: scale(1.05);
 }
 
-#index article + article {
-    margin: 20px 0px 0px 0px;
-}
-
-#index h2 {
+.article-link h2,
+.article-summary h2 {
     font-size: 1.7em;
     font-weight: normal;
-    line-height: 1.4em;
-    margin: 10px 20px;
+    margin: 20px;
 }
 
-#index p {
-    line-height: 1.4em;
-    margin: 10px 20px;
+.article-link h3,
+.article-summary h3 {
+    font-size: 1.0em;
+    font-weight: normal;
+    margin: 20px;
+}
+
+.article-link p,
+.article-summary p {
+    margin: 20px;
     text-align: justify;
 }
 
-/* Projects */
+.article-link h2,
+.article-link h3,
+.article-link p {
+    margin: 20px 10px;
+    text-align: center;
+}
 
-#projects article {
+/* Project */
+
+.project-summary {
     background-color: #fafafa;
     border: 1px solid #dddddd;
     border-radius: 4px;
@@ -388,46 +291,116 @@ body > footer ul {
     display: block;
 }
 
-#projects footer {
+.project-summary footer {
+    margin: 40px 10px 20px 10px;
     text-align: center;
-    margin: 20px;
 }
 
-#projects h1 {
-    font-size: 1.2em;
-    line-height: 1.4em;
+.project-summary h2 {
+    font-size: 1.7em;
+    font-weight: normal;
     margin: 0px;
     text-align: center;
-    text-transform: capitalize;
 }
 
-#projects header {
-    margin: 20px 5px 10px 5px;
+.project-summary header {
+    margin: 20px 10px;
 }
 
-#projects iframe {
+.project-summary iframe {
     margin: 0px 10px;
 }
 
-#projects li + li {
-    margin: 20px 0px 0px 0px;
-}
-
-#projects ol {
-    float: left;
-    list-style-type: none;
-    width: 310px;
-}
-
-#projects ol + ol {
-    margin: 0px 0px 0px 20px;
-}
-
-#projects p {
-    font-size: 1em;
-    line-height: 1.4em;
-    margin: 10px 20px;
+.project-summary p {
+    margin: 20px 10px;
     text-align: center;
+}
+
+/* 404 */
+
+/* About */
+
+#profile-picture {
+    float: right;
+    height: 250px;
+    margin: 20px 0px 20px 20px;
+    width: 200px;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    body > header {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    body > header {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    body > header {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    body > header a,
+    .container > footer a,
+    .article-full header a,
+    .article-link a,
+    .article-summary a {
+        
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        -webkit-transition: none;
+        transition: none;
+    }
+    
+    body > header a:hover,
+    .container > footer a:hover,
+    .article-full header a:hover,
+    .article-link a:hover,
+    .article-summary a:hover {
+        
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
 }
 
 /* Developement */

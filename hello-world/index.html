@@ -7,12 +7,12 @@
     
     <title>Hello World | Michael Reneer</title>
     
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="Michael Kelly Reneer">
     <meta name="description" content="">
     <meta name="keywords" content="">
     
-    <link href="http://michaelreneer.com/theme/css/normalize.min.css?cdc9377a" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/pygments.min.css?cacdaf45" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/main.min.css?e2b74a92" rel="stylesheet">    
+    <link href="http://michaelreneer.com/theme/css/normalize.min.css?8703898a" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/bootstrap.min.css?9d88f119" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/pygments.min.css?cacdaf45" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/main.min.css?c9a215d3" rel="stylesheet">    
     <link href="http://localhost:8000/feeds/all.atom.xml" rel="alternate" type="application/atom+xml" title="Michael Reneer Atom Feed" />    
         
     <!--[if lt IE 9]>
@@ -22,7 +22,7 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="container">
             <h2><a href="http://michaelreneer.com" title="">Michael Reneer</a></h2>
             
             <nav>
@@ -30,17 +30,15 @@
             </nav>        </div>
     </header>
     
-    <section id="article" class="container">
-        <article>
-            <header>
-                <hgroup>
-                    <h1><a href="http://michaelreneer.com/hello-world/" rel="bookmark" title="Permalink to Hello World">Hello World</a></h1>
-                    <h2>Bored + learning python = a blog written with pelican</h2>
-                </hgroup>
-                <time title="2012-12-09T00:00:00">Sun 09 December 2012</time>
-            </header>
-            
-            <p>I have recently begun working professionally with <a href="http://www.python.org" title="Python">Python</a> and decided in
+    <div class="container">
+        <article class="article-full">
+        <header>
+            <h1><a href="http://michaelreneer.com/hello-world/" rel="bookmark" title="Permalink to Hello World">Hello World</a></h1>
+            <h2>bored + learning python = a blog written with pelican</h2>
+            <time title="2012-12-09T00:00:00">Sun 09 December 2012</time>
+        </header>
+        
+        <p>I have recently begun working professionally with <a href="http://www.python.org" title="Python">Python</a> and decided in
 order to truly have any <em>fun</em>, I needed to dive in with some of my free time.
 For a while I have been interested in starting a blog. Being more keen on
 static site generation than <a href="http://wordpress.com" title="WordPress">WordPress</a> configuration and wanting to learn
@@ -54,9 +52,9 @@ project. Now here you are reading a hello world blog entry written in
 <p>I am currently using OS X and the Terminal app. Here's what I did...</p>
 <h2>Environment</h2>
 <p>First install packages <a href="http://pypi.python.org/pypi/pip" title="pip">pip</a>, <a href="http://pypi.python.org/pypi/virtualenv" title="virtualenv">virtualenv</a>, and <a href="http://pypi.python.org/pypi/virtualenvwrapper" title="virtualenvwrapper">virtualenvwrapper</a>.</p>
-<div class="codehilite"><pre><span class="go">sudo easy_install pip</span>
-<span class="go">sudo pip install virtualenv</span>
-<span class="go">sudo pip install virtualenvwrapper</span>
+<div class="codehilite"><pre>sudo easy_install pip
+sudo pip install virtualenv
+sudo pip install virtualenvwrapper
 </pre></div>
 
 
@@ -73,24 +71,24 @@ project. Now here you are reading a hello world blog entry written in
 <p>Please read the <a href="http://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html" title="virtualenvwrapper goodies">virtualenvwrapper reference</a>.</p>
 <h2>Pelican</h2>
 <p>Create the virtual environment.</p>
-<div class="codehilite"><pre><span class="go">mkvirtualenv --no-site-packages michaelreneer.github.com</span>
+<div class="codehilite"><pre>mkvirtualenv --no-site-packages michaelreneer.github.com
 </pre></div>
 
 
 <p>Setup the project.</p>
-<div class="codehilite"><pre><span class="go">mkdir ~/Documents/Developer/michaelreneer.github.com</span>
-<span class="go">cd ~/Documents/Developer/michaelreneer.github.com</span>
-<span class="go">setvirtualenvproject</span>
+<div class="codehilite"><pre>mkdir ~/Documents/Developer/michaelreneer.github.com
+<span class="nb">cd</span> ~/Documents/Developer/michaelreneer.github.com
+setvirtualenvproject
 </pre></div>
 
 
 <p>Install packages.</p>
-<div class="codehilite"><pre><span class="go">pip install pelican Markdown</span>
+<div class="codehilite"><pre>pip install pelican Markdown
 </pre></div>
 
 
 <p>Run pelican quickstart.</p>
-<div class="codehilite"><pre><span class="go">pelican-quickstart</span>
+<div class="codehilite"><pre>pelican-quickstart
 </pre></div>
 
 
@@ -111,13 +109,13 @@ directory named for the branch.</p>
 push to the <code>source</code> branch, my pelican build runs, copies its output to the
 <code>master</code> branch, and finished by pushing the <code>master</code> branch. Eliminating any
 branch switching antics.</p>
-            
-            <aside>
-                <p>tags: 
-                    <a href="http://michaelreneer.com/tag/blog.html">blog</a>
-                    <a href="http://michaelreneer.com/tag/pelican.html">pelican</a>
-                                    </p>                
-                <a href="https://twitter.com/share" class="twitter-share-button" data-via="michaelreneer" data-count="none" data-dnt="true"></a>
+        
+        <aside class="clearfix">
+            <span>tags: 
+                <a href="http://michaelreneer.com/tag/blog.html">blog</a>
+                <a href="http://michaelreneer.com/tag/pelican.html">pelican</a>
+                            </span>            
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="michaelreneer" data-count="none" data-dnt="true"></a>
 
 <script>
     !function(d,s,id){
@@ -129,12 +127,10 @@ branch switching antics.</p>
             fjs.parentNode.insertBefore(js,fjs);
         }
     }(document,'script','twitter-wjs');
-</script>                
-                <br style="clear:both" />
-            </aside>
-            
-            <section class="comments">
-                <div id="disqus_thread"></div>
+</script>        </aside>
+        
+        <section class="comments">
+            <div id="disqus_thread"></div>
 
 <script type="text/javascript">
     var disqus_shortname = 'michaelreneer';
@@ -145,15 +141,15 @@ branch switching antics.</p>
         dsq.type = 'text/javascript';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
-</script>            </section>
-        </article>
-    </section>    
-    <footer>
-        <ul>            <li><a href="mailto:contact@michaelreneer.com" title="Email">Email</a></li>            <li><a href="http://github.com/michaelreneer" title="GitHub">GitHub</a></li>            <li><a href="http://twitter.com/michaelreneer" title="Twitter">Twitter</a></li>            <li><a href="http://www.linkedin.com/pub/michael-reneer/20/26/9a0/" title="Linkedin">Linkedin</a></li>            
-            <li><a href="http://localhost:8000/feeds/all.atom.xml" title="Feed" rel="alternate" type="application/atom+xml">Feed</a></li>            
-                        
-            <li>&copy; 2012 Michael Kelly Reneer.</li>
-        </ul>    </footer>
+</script>        </section>
+    </article>        
+        <footer>
+            <ul>                <li><a href="mailto:contact@michaelreneer.com" title="Email">Email</a></li>                <li><a href="http://github.com/michaelreneer" title="GitHub">GitHub</a></li>                <li><a href="http://twitter.com/michaelreneer" title="Twitter">Twitter</a></li>                <li><a href="http://www.linkedin.com/pub/michael-reneer/20/26/9a0/" title="Linkedin">Linkedin</a></li>                
+                <li><a href="http://localhost:8000/feeds/all.atom.xml" title="Feed" rel="alternate" type="application/atom+xml">Feed</a></li>                
+                                
+                <li>&copy; 2012 Michael Kelly Reneer.</li>
+            </ul>        </footer>
+    </div>
     
     <script>
     var _gaq = [['_setAccount', 'UA-36860769-1'], ['_trackPageview']];

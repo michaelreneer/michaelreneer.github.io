@@ -7,12 +7,12 @@
     
     <title>About | Michael Reneer</title>
     
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="Michael Kelly Reneer">
     <meta name="description" content="">
     <meta name="keywords" content="">
     
-    <link href="http://michaelreneer.com/theme/css/normalize.min.css?cdc9377a" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/pygments.min.css?cacdaf45" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/main.min.css?e2b74a92" rel="stylesheet">    
+    <link href="http://michaelreneer.com/theme/css/normalize.min.css?8703898a" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/bootstrap.min.css?9d88f119" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/pygments.min.css?cacdaf45" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/main.min.css?c9a215d3" rel="stylesheet">    
     <link href="http://localhost:8000/feeds/all.atom.xml" rel="alternate" type="application/atom+xml" title="Michael Reneer Atom Feed" />    
         
     <!--[if lt IE 9]>
@@ -22,7 +22,7 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="container">
             <h2><a href="http://michaelreneer.com" title="">Michael Reneer</a></h2>
             
             <nav>
@@ -30,7 +30,8 @@
             </nav>        </div>
     </header>
     
-    <section id="about" class="container">
+    <div class="container">
+        <article class="article-full">
         <h2>Professional</h2>
 <p>I am starting to learning <a href="http://www.python.org" title="Python">Python</a> - it's slowly growing on me, but what I
 truly enjoy is working with <a href="http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html" title="Objective-C">Objective-C</a> and <a href="https://developer.apple.com/technologies/ios/cocoa-touch.html" title="Cocoa Touch">Cocoa Touch</a>, and anything
@@ -66,16 +67,17 @@ theme for <a href="https://github.com/michaelreneer/michaelreneer.github.com" ti
 on <a href="http://pages.github.com" title="GitHub Pages">GitHub Pages</a>.</p>
 <p>In addition to Pelican and Markdown, I am using <a href="http://jinja.pocoo.org" title="Jinja">Jinja</a>, <a href="http://pygments.org" title="Pygments">Pygments</a>,
 <a href="https://github.com/miracle2k/webassets" title="webassets">webassets</a>, and <a href="https://github.com/zacharyvoase/cssmin" title="cssmin">cssmin</a> either as a plugin for, or as a dependency of,
-Pelican. To make everything a bit more social I have included the
+Pelican. To make everything a bit more social I have included
 <a href="https://twitter.com/about/resources/buttons" title="Twitter Buttons">Twitter buttons</a> and the unofficial <a href="http://ghbtns.com" title="GitHub Buttons">GitHub buttons</a>.</p>
 <p>Thanks.</p>
-    </section>    
-    <footer>
-        <ul>            <li><a href="mailto:contact@michaelreneer.com" title="Email">Email</a></li>            <li><a href="http://github.com/michaelreneer" title="GitHub">GitHub</a></li>            <li><a href="http://twitter.com/michaelreneer" title="Twitter">Twitter</a></li>            <li><a href="http://www.linkedin.com/pub/michael-reneer/20/26/9a0/" title="Linkedin">Linkedin</a></li>            
-            <li><a href="http://localhost:8000/feeds/all.atom.xml" title="Feed" rel="alternate" type="application/atom+xml">Feed</a></li>            
-                        
-            <li>&copy; 2012 Michael Kelly Reneer.</li>
-        </ul>    </footer>
+    </article>        
+        <footer>
+            <ul>                <li><a href="mailto:contact@michaelreneer.com" title="Email">Email</a></li>                <li><a href="http://github.com/michaelreneer" title="GitHub">GitHub</a></li>                <li><a href="http://twitter.com/michaelreneer" title="Twitter">Twitter</a></li>                <li><a href="http://www.linkedin.com/pub/michael-reneer/20/26/9a0/" title="Linkedin">Linkedin</a></li>                
+                <li><a href="http://localhost:8000/feeds/all.atom.xml" title="Feed" rel="alternate" type="application/atom+xml">Feed</a></li>                
+                                
+                <li>&copy; 2012 Michael Kelly Reneer.</li>
+            </ul>        </footer>
+    </div>
     
     <script>
     var _gaq = [['_setAccount', 'UA-36860769-1'], ['_trackPageview']];
