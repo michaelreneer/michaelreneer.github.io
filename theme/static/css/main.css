@@ -371,16 +371,36 @@ article {
         padding-left: 20px;
         padding-right: 20px;
     }
+    
+    body > header a,
+    .container > footer a,
+    .article-full header a,
+    .article-link a,
+    .article-summary a {
+        
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        -webkit-transition: none;
+        transition: none;
+    }
+    
+    body > header a:hover,
+    .container > footer a:hover,
+    .article-full header a:hover,
+    .article-link a:hover,
+    .article-summary a:hover {
+        
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        -webkit-transform: none;
+        transform: none;
+    }
 }
  
 /* Landscape phones and down */
 @media (max-width: 480px) {
-    body > header {
-        margin-left: -20px;
-        margin-right: -20px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
 }
 
 /* Developement */
