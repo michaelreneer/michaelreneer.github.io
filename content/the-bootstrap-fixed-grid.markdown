@@ -29,11 +29,14 @@ doesn't do everything I want it to.
 Bootstrap ended up being very easy to implement. Checkout my [commit][]. It's
 probably not worth going over the steps, as the documentation on
 [Scaffolding][] really is clear. The only downside I have with the framework is
-that it's not "[mobile first][]". Foundation is designed mobile first, but it
-doesn't come with fixed-width layouts. I am pleased for now, and will likely
-take a look at both Foundation and Frameless sometime in the furture.
+that it's not "[mobile first][]". Foundation is designed to be mobile first,
+but it doesn't come with fixed-width layouts. [Bootstrap 3.0][] looks very
+similar to the latest iteration of Foundation, in that it is being redesigned
+with mobile in mind. I am pleased for now, and will likely take a look at
+Foundation, Frameless, and Bootsrtrap 3.0 sometime in the furture.
 
 [bootstrap]: http://twitter.github.io/bootstrap/ "Bootstrap"
+[bootstrap 3.0]: http://thenextweb.com/dd/2013/03/10/heres-an-early-look-at-bootstrap-3-rewritten-to-be-mobile-friendly-from-the-start/ "Bootstrap 3.0"
 [commit]: https://github.com/michaelreneer/michaelreneer.github.com/commit/9320672f46bd3334685ef7a6f064b09dfccaf9b0 "Commit"
 [foundation]: http://foundation.zurb.com "Foundation"
 [frameless]: http://framelessgrid.com "Frameless"
