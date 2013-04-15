@@ -50,7 +50,7 @@ on [GitHub Pages][].
 
 In addition to Pelican and Markdown, I am using [Jinja][], [Pygments][],
 [webassets][], and [cssmin][] either as a plugin for, or as a dependency of,
-Pelican. To make everything a bit more social I have included the
+Pelican. To make everything a bit more social I have included
 [Twitter buttons][] and the unofficial [GitHub buttons][].
 
 Thanks.
