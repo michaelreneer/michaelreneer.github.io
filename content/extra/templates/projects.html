@@ -3,8 +3,8 @@
 {% block title -%}Projects | {{ SITENAME }}{%- endblock title %}
 
 {% block content -%}
-    <section id="projects" class="container">
-        <ol>
+    <section id="projects" class="row">
+        <ol class="span6">
             {%- for page in pages if page.is_project == "yes" %}
             {% if loop.index0 % 2 == 0 -%}
             <li>
@@ -28,7 +28,7 @@
             {%- endfor %}
         </ol>
         
-        <ol>
+        <ol class="span6">
             {%- for page in pages if page.is_project == "yes" %}
             {% if loop.index0 % 2 != 0 -%}
             <li>

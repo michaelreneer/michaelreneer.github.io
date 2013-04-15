@@ -20,6 +20,10 @@
     <link href="{{ SITEURL }}/{{ ASSET_URL }}" rel="stylesheet">
     {%- endassets %}
     
+    {%- assets filters="cssmin", output="css/bootstrap.min.css", "css/bootstrap.css" -%}
+    <link href="{{ SITEURL }}/{{ ASSET_URL }}" rel="stylesheet">
+    {%- endassets %}
+    
     {%- assets filters="cssmin", output="css/pygments.min.css", "css/pygments.css" -%}
     <link href="{{ SITEURL }}/{{ ASSET_URL }}" rel="stylesheet">
     {%- endassets %}
@@ -43,7 +47,7 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="container">
             <h2><a href="{{ SITEURL }}" title="">{{ SITENAME }}</a></h2>
             
             {% if MENUITEMS -%}
@@ -58,28 +62,30 @@
         </div>
     </header>
     
-    {% block content -%}
-    {%- endblock content %}
-    
-    <footer>
-        {% if SOCIAL or FEED_ATOM or FEED_RSS or LICENSE -%}
-        <ul>
-            {%- for title, link in SOCIAL %}
-            <li><a href="{{ link }}" title="{{ title }}">{{ title }}</a></li>
-            {%- endfor %}
-            
-            {% if FEED_ATOM -%}
-            <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" title="Feed" rel="alternate" type="application/atom+xml">Feed</a></li>
+    <div class="container">
+        {% block content -%}
+        {%- endblock content %}
+        
+        <footer>
+            {% if SOCIAL or FEED_ATOM or FEED_RSS or LICENSE -%}
+            <ul>
+                {%- for title, link in SOCIAL %}
+                <li><a href="{{ link }}" title="{{ title }}">{{ title }}</a></li>
+                {%- endfor %}
+                
+                {% if FEED_ATOM -%}
+                <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" title="Feed" rel="alternate" type="application/atom+xml">Feed</a></li>
+                {%- endif %}
+                
+                {% if FEED_RSS -%}
+                <li><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" title="RSS" rel="alternate" type="application/rss+xml">RSS</a></li>
+                {%- endif %}
+                
+                <li>{{ LICENSE }}</li>
+            </ul>
             {%- endif %}
-            
-            {% if FEED_RSS -%}
-            <li><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" title="RSS" rel="alternate" type="application/rss+xml">RSS</a></li>
-            {%- endif %}
-            
-            <li>{{ LICENSE }}</li>
-        </ul>
-        {%- endif %}
-    </footer>
+        </footer>
+    </div>
     
     {% include "analytics.html" %}
 </body>

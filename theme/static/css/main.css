@@ -29,7 +29,6 @@ body > header div {
     height: 100%;
     margin: 0px auto;
     position: relative;
-    width: 640px;
 }
 
 body > header a {
@@ -76,16 +75,15 @@ body > header nav li {
 
 /* Footer */
 
-body > footer {
+.container > footer {
     border-top: 2px solid #cccccc;
     color: #888888;
     font-size: 0.8em;
     height: 80px;
     margin: 40px auto 0px auto;
-    width: 640px;
 }
 
-body > footer a {
+.container > footer a {
     color: #888888;
     display: inline-block;
     text-transform: uppercase;
@@ -97,7 +95,7 @@ body > footer a {
     transition: all 0.1s ease-out;
 }
 
-body > footer a:hover {
+.container > footer a:hover {
     color: #ff6633;
     
     -moz-transform: scale(1.10);
@@ -107,22 +105,17 @@ body > footer a:hover {
     transform: scale(1.10);
 }
 
-body > footer li {
+.container > footer li {
     display: inline;
     margin: 0px 5px;
 }
 
-body > footer ul {
+.container > footer ul {
     margin: 20px 0px 0px 0px;
     text-align: center;
 }
 
 /* Base */
-
-.container {
-    margin: 40px auto 80px auto;
-    width: 640px;
-}
 
 /* Article */
 
@@ -207,13 +200,8 @@ body > footer ul {
 }
 
 #archive ol {
-    float: left;
     list-style-type: none;
-    width: 310px;
-}
-
-#archive ol + ol {
-    margin: 0px 0px 0px 20px;
+    margin-bottom: 20px;
 }
 
 /* Article */
@@ -414,13 +402,8 @@ body > footer ul {
 }
 
 #projects ol {
-    float: left;
     list-style-type: none;
-    width: 310px;
-}
-
-#projects ol + ol {
-    margin: 0px 0px 0px 20px;
+    margin-bottom: 20px;
 }
 
 #projects p {
@@ -428,6 +411,34 @@ body > footer ul {
     line-height: 1.4em;
     margin: 10px 20px;
     text-align: center;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    body > header {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    body > header {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 /* Developement */

@@ -3,8 +3,8 @@
 {% block title -%}Blog | {{ SITENAME }}{%- endblock title %}
 
 {% block content -%}
-    <section id="archive" class="container">
-        <ol>
+    <section id="archive" class="row">
+        <ol class="span6">
             {%- for article in dates %}
             {% if loop.index0 is even -%}
             <li>
@@ -22,8 +22,8 @@
             {%- endif %}
             {%- endfor %}
         </ol>
-        
-        <ol>
+
+        <ol class="span6">
             {%- for article in dates %}
             {% if loop.index0 is odd -%}
             <li>

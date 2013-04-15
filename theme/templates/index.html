@@ -3,7 +3,7 @@
 {% block title -%}{{ SITENAME }}{%- endblock title %}
 
 {% block content -%}
-    <section id="index" class="container">
+    <section id="index">
         {%- for article in dates[:3] %}
         <article>
             <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
