@@ -9,11 +9,11 @@ was to begin digging into some responsive layouts. I wanted a fixed-width
 design with various layouts and I wanted to test out a framework instead of
 build from scratch.
 
-Suprize, I ended up implementing [Bootstrap][]. Here is what I looked at:
+Surprise, I ended up implementing [Bootstrap][]. Here is what I looked at:
 
-Bootstrap seemed like the most well adopted, great community, great
-documentation, and supported. I didn't care for any of the UI tools, but it was
-easy to build and exclude all the extras I didn't want.
+Bootstrap seemed to be the most well adopted; it has a great community, great
+documentation, and is actively supported. I didn't care for any of the UI
+tools, but it was easy to build and exclude all the extras I didn't want.
 
 [Foundation][] looked pretty good as well. Maybe a slightly smaller user base,
 but still very supported and the documentation was there. Again, didn't want
