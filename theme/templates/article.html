@@ -13,13 +13,13 @@
         {{ article.content }}
         
         <aside class="clearfix">
-            {% if article.tags -%}
+            {#% if article.tags -%}
             <span>tags: 
                 {% for tag in article.tags -%}
                 <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
                 {% endfor %}
             </span>
-            {%- endif %}
+            {%- endif %#}
             
             {% include "twitter-share.html" %}
         </aside>
