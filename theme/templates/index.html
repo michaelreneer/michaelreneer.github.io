@@ -3,7 +3,7 @@
 {% block title -%}{{ SITENAME }}{%- endblock title %}
 
 {% block content -%}
-    <!--
+    {#
     {% set article = dates[0] %}
         
     <article class="article-full">
@@ -27,7 +27,7 @@
             {% include "twitter-share.html" %}
         </aside>
     </article>
-    -->
+    #}
     
     {%- for article in dates[0:5] %}
     <article class="article-summary">
