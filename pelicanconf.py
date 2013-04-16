@@ -58,9 +58,8 @@ PROJECTS_SAVE_AS = 'projects/index.html'
 TAG_SAVE_AS = False
 
 # Feed
-FEED_DOMAIN = SITEURL
+CATEGORY_FEED_ATOM = None
 FEED_ALL_ATOM = None
-FEED_ATOM = 'feeds/all.atom.xml'
 
 # Translations
 TRANSLATION_FEED_ATOM = None
