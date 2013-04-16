@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Michael Reneer</title><link href="http://michaelreneer.com/" rel="alternate"></link><link href="http://localhost:8000/feeds/web.atom.xml" rel="self"></link><id>http://michaelreneer.com/</id><updated>2013-04-14T00:00:00-04:00</updated><entry><title>The Bootstrap Fixed Grid</title><link href="http://michaelreneer.com/the-bootstrap-fixed-grid/" rel="alternate"></link><updated>2013-04-14T00:00:00-04:00</updated><author><name>Michael Kelly Reneer</name></author><id>tag:michaelreneer.com,2013-04-14:the-bootstrap-fixed-grid/</id><summary type="html">&lt;p&gt;One of the first things I wanted to do with my blog - after exploring pelican -
+was to begin digging into some responsive layouts. I wanted a fixed-width
+design with various layouts and I wanted to test out a framework instead of
+build from scratch.&lt;/p&gt;
+&lt;p&gt;Surprise, I ended up implementing &lt;a href="http://twitter.github.io/bootstrap/" title="Bootstrap"&gt;Bootstrap&lt;/a&gt;. Here is what I looked at:&lt;/p&gt;
+&lt;p&gt;Bootstrap seemed to be the most well adopted; it has a great community, great
+documentation, and is actively supported. I didn't care for any of the UI
+tools, but it was easy to build and exclude all the extras I didn't want.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://foundation.zurb.com" title="Foundation"&gt;Foundation&lt;/a&gt; looked pretty good as well. Maybe a slightly smaller user base,
+but still very supported and the documentation was there. Again, didn't want
+the UI tools and there was a way to exclude them.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://framelessgrid.com" title="Frameless"&gt;Frameless&lt;/a&gt; also caught my eye. It ended up being less of a framework and
+more of a strategy. But it was really interesting, and I may end up adopting a
+fully customized approach since I am using so little of a framework that
+doesn't do everything I want it to.&lt;/p&gt;
+&lt;p&gt;... so now you can view the site on your phone, tablet and computer.&lt;/p&gt;
+&lt;p&gt;Bootstrap ended up being very easy to implement. Checkout my &lt;a href="https://github.com/michaelreneer/michaelreneer.github.com/commit/9320672f46bd3334685ef7a6f064b09dfccaf9b0" title="Commit"&gt;commit&lt;/a&gt;. It's
+probably not worth going over the steps, as the documentation on
+&lt;a href="http://twitter.github.io/bootstrap/scaffolding.html" title="Scaffolding"&gt;Scaffolding&lt;/a&gt; really is clear. The only downside I have with the framework is
+that it's not "&lt;a href="http://www.lukew.com/ff/entry.asp?933" title="Mobile First"&gt;mobile first&lt;/a&gt;". Foundation is designed to be mobile first,
+but it doesn't come with fixed-width layouts. &lt;a href="http://thenextweb.com/dd/2013/03/10/heres-an-early-look-at-bootstrap-3-rewritten-to-be-mobile-friendly-from-the-start/" title="Bootstrap 3.0"&gt;Bootstrap 3.0&lt;/a&gt; looks very
+similar to the latest iteration of Foundation, in that it is being redesigned
+with mobile in mind. I am pleased for now, and will likely take a look at
+Foundation, Frameless, and Bootsrtrap 3.0 sometime in the furture.&lt;/p&gt;</summary><category term="html5"></category><category term="css"></category><category term="bootstrap"></category><category term="responsive"></category><category term="fixed"></category></entry></feed>
