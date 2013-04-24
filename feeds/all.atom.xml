@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Michael Reneer</title><link href="http://michaelreneer.com/" rel="alternate"></link><link href="http://michaelreneer.com/feeds/all.atom.xml" rel="self"></link><id>http://michaelreneer.com/</id><updated>2013-04-14T00:00:00-04:00</updated><entry><title>The Bootstrap Fixed Grid</title><link href="http://michaelreneer.com/the-bootstrap-fixed-grid/" rel="alternate"></link><updated>2013-04-14T00:00:00-04:00</updated><author><name>Michael Kelly Reneer</name></author><id>tag:michaelreneer.com,2013-04-14:the-bootstrap-fixed-grid/</id><summary type="html">&lt;p&gt;One of the first things I wanted to do with my blog - after exploring pelican -
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Michael Kelly Reneer</title><link href="http://michaelreneer.com/" rel="alternate"></link><link href="http://michaelreneer.com/feeds/all.atom.xml" rel="self"></link><id>http://michaelreneer.com/</id><updated>2013-04-21T00:00:00-04:00</updated><entry><title>The Man Who Stopped</title><link href="http://michaelreneer.com/the-man-who-stopped/" rel="alternate"></link><updated>2013-04-21T00:00:00-04:00</updated><author><name>Michael Kelly Reneer</name></author><id>tag:michaelreneer.com,2013-04-21:the-man-who-stopped/</id><summary type="html">&lt;p&gt;this end of the road comes nearer&lt;br /&gt;
+becoming trees on either side&lt;br /&gt;
+and footsteps winding among them&lt;br /&gt;
+to where the lost men hide  &lt;/p&gt;
+&lt;p&gt;the sun is high overhead&lt;br /&gt;
+shining down through the leaves&lt;br /&gt;
+like red-gold waterfalls&lt;br /&gt;
+lifted by such slightest breeze  &lt;/p&gt;
+&lt;p&gt;and there is one skeleton&lt;br /&gt;
+propped up as a puppet would be&lt;br /&gt;
+leaning back at the end of the road&lt;br /&gt;
+for those who reach the end to see  &lt;/p&gt;
+&lt;p&gt;he could not have gone on&lt;br /&gt;
+nor permitted to return home&lt;br /&gt;
+too broad to navigate the trees&lt;br /&gt;
+and exiled to roam  &lt;/p&gt;
+&lt;p&gt;so it is said he sat&lt;br /&gt;
+relaxed against an old oak&lt;br /&gt;
+he must have been without food&lt;br /&gt;
+or warmth in shadows cloak  &lt;/p&gt;
+&lt;p&gt;watching all the fools trudge on&lt;br /&gt;
+lost into the wood&lt;br /&gt;
+seeing those who stopped&lt;br /&gt;
+returning to what homes they could  &lt;/p&gt;
+&lt;p&gt;because this skeleton&lt;br /&gt;
+he was the man who stopped&lt;br /&gt;
+he walked the road until the end&lt;br /&gt;
+and then against the tree he flopped  &lt;/p&gt;</summary><category term="poetry"></category><category term="pirates"></category><category term="love"></category></entry><entry><title>The Bootstrap Fixed Grid</title><link href="http://michaelreneer.com/the-bootstrap-fixed-grid/" rel="alternate"></link><updated>2013-04-14T00:00:00-04:00</updated><author><name>Michael Kelly Reneer</name></author><id>tag:michaelreneer.com,2013-04-14:the-bootstrap-fixed-grid/</id><summary type="html">&lt;p&gt;One of the first things I wanted to do with my blog - after exploring pelican -
 was to begin digging into some responsive layouts. I wanted a fixed-width
 design with various layouts and I wanted to test out a framework instead of
 build from scratch.&lt;/p&gt;

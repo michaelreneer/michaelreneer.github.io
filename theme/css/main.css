@@ -61,7 +61,7 @@ body > header nav {
 
 body > header nav li {
     display: inline-block;
-    margin: 0px 0px 0px 15px;
+    margin: 0px 0px 0px 20px;
 }
 
 body > header nav ul {
@@ -72,14 +72,14 @@ body > header nav ul {
 
 /* Footer */
 
-.container > footer {
+body > footer {
     border-top: 2px solid #cccccc;
     color: #888888;
     font-size: 0.8em;
     margin: 40px 0px 0px 0px;
 }
 
-.container > footer a {
+body > footer a {
     color: #888888;
     display: inline-block;
     text-transform: uppercase;
@@ -91,7 +91,7 @@ body > header nav ul {
     transition: all 0.1s ease-out;
 }
 
-.container > footer a:hover {
+body > footer a:hover {
     color: #ff6633;
     
     -moz-transform: scale(1.10);
@@ -101,12 +101,12 @@ body > header nav ul {
     transform: scale(1.10);
 }
 
-.container > footer li {
+body > footer li {
     display: inline-block;
     margin: 0px 5px;
 }
 
-.container > footer ul {
+body > footer ul {
     list-style: none;
     margin: 20px 0px;
     padding: 0px;
@@ -337,35 +337,8 @@ article {
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-    body > header {
-        margin-left: -20px;
-        margin-right: -20px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
- 
-/* Landscape phones and down */
-@media (max-width: 480px) {
-    body > header {
-        margin-left: -20px;
-        margin-right: -20px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-
-/* Large desktop */
-@media (min-width: 1200px) {
-}
- 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-}
- 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-    body > header {
+    body > header,
+    body > footer.container {
         margin-left: -20px;
         margin-right: -20px;
         padding-left: 20px;
@@ -373,7 +346,7 @@ article {
     }
     
     body > header a,
-    .container > footer a,
+    body > footer a,
     .article-full header a,
     .article-link a,
     .article-summary a {
@@ -386,7 +359,7 @@ article {
     }
     
     body > header a:hover,
-    .container > footer a:hover,
+    body > footer a:hover,
     .article-full header a:hover,
     .article-link a:hover,
     .article-summary a:hover {
@@ -401,6 +374,22 @@ article {
  
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    body > header h2 {
+        float: none;
+        text-align: center;
+    }
+    
+    body > header nav {
+        float: none;
+    }
+    
+    body > header nav li {
+        margin: 0px 10px;
+    }
+    
+    body > header nav ul {
+        text-align: center;
+    }
 }
 
 /* Developement */
