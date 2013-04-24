@@ -5,7 +5,7 @@ AUTHOR = 'Michael Kelly Reneer'
 DESCRIPTION = ''
 KEYWORDS = ''
 LICENSE = '&copy; 2012 ' + AUTHOR + '.'
-SITENAME = 'Michael Reneer'
+SITENAME = 'Michael Kelly Reneer'
 SITEURL = 'http://localhost:8000'
 TIMEZONE = 'America/New_York'
 
