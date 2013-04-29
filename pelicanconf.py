@@ -72,7 +72,7 @@ MENUITEMS = (
     ('About', 'about/'),
 )
 SOCIAL = (
-    ('Email', 'mailto:contact@michaelreneer.com'),
+    ('Email', 'mailto:michaelreneer@gmail.com'),
     ('GitHub', 'http://github.com/michaelreneer'),
     ('Twitter', 'http://twitter.com/michaelreneer'),
     ('Linkedin', 'http://www.linkedin.com/pub/michael-reneer/20/26/9a0/')
