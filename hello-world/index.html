@@ -51,14 +51,14 @@ project. Now here you are reading a hello world blog entry written in
 <p>I am currently using OS X and the Terminal app. Here's what I did...</p>
 <h2>Environment</h2>
 <p>First install packages <a href="http://pypi.python.org/pypi/pip" title="pip">pip</a>, <a href="http://pypi.python.org/pypi/virtualenv" title="virtualenv">virtualenv</a>, and <a href="http://pypi.python.org/pypi/virtualenvwrapper" title="virtualenvwrapper">virtualenvwrapper</a>.</p>
-<div class="codehilite"><pre>sudo easy_install pip
+<div class="highlight"><pre>sudo easy_install pip
 sudo pip install virtualenv
 sudo pip install virtualenvwrapper
 </pre></div>
 
 
 <p>Update <code>~/.bash_profile</code> by adding:</p>
-<div class="codehilite"><pre><span class="nb">export </span><span class="nv">WORKON_HOME</span><span class="o">=</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span>/.virtualenvs
+<div class="highlight"><pre><span class="nb">export </span><span class="nv">WORKON_HOME</span><span class="o">=</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span>/.virtualenvs
 <span class="nb">export </span><span class="nv">PROJECT_HOME</span><span class="o">=</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span>/Documents/Developer
 <span class="nb">export </span><span class="nv">VIRTUALENVWRAPPER_SCRIPT</span><span class="o">=</span>/usr/local/bin/virtualenvwrapper.sh
 <span class="nb">source</span> /usr/local/bin/virtualenvwrapper_lazy.sh
@@ -70,24 +70,24 @@ sudo pip install virtualenvwrapper
 <p>Please read the <a href="http://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html" title="virtualenvwrapper goodies">virtualenvwrapper reference</a>.</p>
 <h2>Pelican</h2>
 <p>Create the virtual environment.</p>
-<div class="codehilite"><pre>mkvirtualenv --no-site-packages michaelreneer.github.com
+<div class="highlight"><pre>mkvirtualenv --no-site-packages michaelreneer.github.com
 </pre></div>
 
 
 <p>Setup the project.</p>
-<div class="codehilite"><pre>mkdir ~/Documents/Developer/michaelreneer.github.com
+<div class="highlight"><pre>mkdir ~/Documents/Developer/michaelreneer.github.com
 <span class="nb">cd</span> ~/Documents/Developer/michaelreneer.github.com
 setvirtualenvproject
 </pre></div>
 
 
 <p>Install packages.</p>
-<div class="codehilite"><pre>pip install pelican Markdown
+<div class="highlight"><pre>pip install pelican Markdown
 </pre></div>
 
 
 <p>Run pelican quickstart.</p>
-<div class="codehilite"><pre>pelican-quickstart
+<div class="highlight"><pre>pelican-quickstart
 </pre></div>
 
 
@@ -144,7 +144,7 @@ branch switching antics.</p>
         <ul>            <li><a href="mailto:michaelreneer@gmail.com" title="Email">Email</a></li>            <li><a href="http://github.com/michaelreneer" title="GitHub">GitHub</a></li>            <li><a href="http://twitter.com/michaelreneer" title="Twitter">Twitter</a></li>            <li><a href="http://www.linkedin.com/pub/michael-reneer/20/26/9a0/" title="Linkedin">Linkedin</a></li>            
             <li><a href="http://michaelreneer.com/feeds/all.atom.xml" title="Feed" rel="alternate" type="application/atom+xml">Feed</a></li>            
                         
-            <li>&copy; 2012 Michael Kelly Reneer.</li>        </ul>    </footer>
+            <li>&copy; 2012-2013 Michael Kelly Reneer.</li>        </ul>    </footer>
     
     <script>
     var _gaq = [['_setAccount', 'UA-36860769-1'], ['_trackPageview']];

@@ -233,14 +233,14 @@ project. Now here you are reading a hello world blog entry written in
 &lt;p&gt;I am currently using OS X and the Terminal app. Here's what I did...&lt;/p&gt;
 &lt;h2&gt;Environment&lt;/h2&gt;
 &lt;p&gt;First install packages &lt;a href="http://pypi.python.org/pypi/pip" title="pip"&gt;pip&lt;/a&gt;, &lt;a href="http://pypi.python.org/pypi/virtualenv" title="virtualenv"&gt;virtualenv&lt;/a&gt;, and &lt;a href="http://pypi.python.org/pypi/virtualenvwrapper" title="virtualenvwrapper"&gt;virtualenvwrapper&lt;/a&gt;.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;sudo easy_install pip
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo easy_install pip
 sudo pip install virtualenv
 sudo pip install virtualenvwrapper
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Update &lt;code&gt;~/.bash_profile&lt;/code&gt; by adding:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;WORKON_HOME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="k"&gt;}&lt;/span&gt;/.virtualenvs
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;WORKON_HOME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="k"&gt;}&lt;/span&gt;/.virtualenvs
 &lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PROJECT_HOME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="k"&gt;}&lt;/span&gt;/Documents/Developer
 &lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;VIRTUALENVWRAPPER_SCRIPT&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/usr/local/bin/virtualenvwrapper.sh
 &lt;span class="nb"&gt;source&lt;/span&gt; /usr/local/bin/virtualenvwrapper_lazy.sh
@@ -252,24 +252,24 @@ sudo pip install virtualenvwrapper
 &lt;p&gt;Please read the &lt;a href="http://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html" title="virtualenvwrapper goodies"&gt;virtualenvwrapper reference&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Pelican&lt;/h2&gt;
 &lt;p&gt;Create the virtual environment.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;mkvirtualenv --no-site-packages michaelreneer.github.com
+&lt;div class="highlight"&gt;&lt;pre&gt;mkvirtualenv --no-site-packages michaelreneer.github.com
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Setup the project.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;mkdir ~/Documents/Developer/michaelreneer.github.com
+&lt;div class="highlight"&gt;&lt;pre&gt;mkdir ~/Documents/Developer/michaelreneer.github.com
 &lt;span class="nb"&gt;cd&lt;/span&gt; ~/Documents/Developer/michaelreneer.github.com
 setvirtualenvproject
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Install packages.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;pip install pelican Markdown
+&lt;div class="highlight"&gt;&lt;pre&gt;pip install pelican Markdown
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Run pelican quickstart.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;pelican-quickstart
+&lt;div class="highlight"&gt;&lt;pre&gt;pelican-quickstart
 &lt;/pre&gt;&lt;/div&gt;
 
 
