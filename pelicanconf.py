@@ -4,7 +4,8 @@
 AUTHOR = 'Michael Kelly Reneer'
 DESCRIPTION = ''
 KEYWORDS = ''
-LICENSE = '&copy; 2012 ' + AUTHOR + '.'
+LICENSE = '&copy; 2012-2013 ' + AUTHOR + '.'
+RELATIVE_URLS = True
 SITENAME = 'Michael Kelly Reneer'
 SITEURL = 'http://localhost:8000'
 TIMEZONE = 'America/New_York'
@@ -40,9 +41,10 @@ FILES_TO_COPY = (
 MARKUP = (
     'markdown',
 )
+PLUGIN_PATH = '/Users/MichaelReneer/.virtualenvs/michaelreneer.github.com/lib/python2.7/site-packages/pelican-plugins'
 PLUGINS = [
-    'pelican.plugins.assets',
-    'pelican.plugins.sitemap',
+    'assets',
+    'sitemap',
 ]
 
 ARCHIVES_SAVE_AS = 'blog/index.html'
