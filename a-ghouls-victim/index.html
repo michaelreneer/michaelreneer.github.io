@@ -86,10 +86,19 @@ and newer fears begin where the cry went  </p>
     (function() {
         var dsq = document.createElement('script');
         dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         dsq.type = 'text/javascript';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
+    window.addEventListener("orientationchange", function() {
+        DISQUS.reset({
+            reload: true,
+            config: function () {  
+                this.page.identifier = 'a-ghouls-victim/';
+                this.page.url = 'http://michaelreneer.com/a-ghouls-victim/';
+            }
+        });
+    }, false);
 </script>        </section>
     </article>    </div>
     

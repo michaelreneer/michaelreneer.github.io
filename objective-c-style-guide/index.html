@@ -112,10 +112,19 @@ currently being used when joining a project. In the absence of that:</p>
     (function() {
         var dsq = document.createElement('script');
         dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         dsq.type = 'text/javascript';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
+    window.addEventListener("orientationchange", function() {
+        DISQUS.reset({
+            reload: true,
+            config: function () {  
+                this.page.identifier = 'objective-c-style-guide/';
+                this.page.url = 'http://michaelreneer.com/objective-c-style-guide/';
+            }
+        });
+    }, false);
 </script>        </section>
     </article>    </div>
     
