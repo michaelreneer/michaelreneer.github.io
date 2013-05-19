@@ -6,9 +6,18 @@
     (function() {
         var dsq = document.createElement('script');
         dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         dsq.type = 'text/javascript';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
+    window.addEventListener("orientationchange", function() {
+        DISQUS.reset({
+            reload: true,
+            config: function () {  
+                this.page.identifier = '{{ article.url }}';
+                this.page.url = '{{ SITEURL }}/{{ article.url }}';
+            }
+        });
+    }, false);
 </script>
 {%- endif %}
