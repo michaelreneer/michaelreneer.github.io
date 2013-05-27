@@ -4,8 +4,8 @@ Professional
 ----------
 
 I am starting to learning [Python][] - it's slowly growing on me, but what I
-truly enjoy is working with [Objective-C][] and [Cocoa Touch][], and anything
-mobile.
+truly enjoy is working with [Objective-C][] and [Cocoa Touch][], and mobile
+application.
 
 During these last few years I have helped architect, build, and design: [iOS][]
 applications; [ASP.NET MVC][] applications using [C#][], [Razor][], [HTML5][]

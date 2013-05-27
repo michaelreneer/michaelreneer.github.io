@@ -47,7 +47,7 @@ Comments
 ----------
 
 - Use descriptive variable and method names to explain code not comments.
-- Use `TODO:` `FIXME:` `!!!:` and `???:` when writing comments.
+- Use `TODO:` `FIXME:` `!!!:` and `???:` when appropriate.
 
 Variables
 ----------
