@@ -142,7 +142,7 @@ a codebase written in &lt;code&gt;objective-c&lt;/code&gt; I prefer the followin
 &lt;h2&gt;Declarations&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Do not declare iVars.&lt;/li&gt;
-&lt;li&gt;Do not put a space between the dereferencing oporator (asterisks) and the
+&lt;li&gt;Do not put a space between the dereferencing oporator (asterisk) and the
     variable.&lt;/li&gt;
 &lt;li&gt;Do not put a space between protocol and the type.&lt;/li&gt;
 &lt;li&gt;Do not accessing iVars, except in &lt;code&gt;-init&lt;/code&gt;, &lt;code&gt;-dealloc&lt;/code&gt;, or accessor.&lt;/li&gt;
