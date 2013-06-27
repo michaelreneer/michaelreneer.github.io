@@ -38,7 +38,7 @@ Declarations
 ----------
 
 - Do not declare iVars.
-- Do not put a space between the dereferencing oporator (asterisks) and the
+- Do not put a space between the dereferencing oporator (asterisk) and the
     variable.
 - Do not put a space between protocol and the type.
 - Do not accessing iVars, except in `-init`, `-dealloc`, or accessor.
