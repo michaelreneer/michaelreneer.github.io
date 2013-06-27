@@ -38,6 +38,11 @@ FILES_TO_COPY = (
     # ('extra/icons/favicon.ico', 'favicon.ico'),
     ('extra/robots.txt', 'robots.txt'),
 )
+# MD_EXTENSIONS = [
+#     'codehilite(css_class=highlight)',
+#     'extra',
+#     'headerid(forceid=False)',
+# ]
 MARKUP = (
     'markdown',
 )

@@ -205,7 +205,7 @@ article {
     text-align: justify;
 }
 
-.article-full .codehilite {
+.article-full .highlight {
     background-color: #222222;
     border: 1px solid #cccccc;
     color: #ffffff;
@@ -213,7 +213,7 @@ article {
     padding: 10px;
 }
 
-.article-full .codehilite pre {
+.article-full .highlight pre {
     font-size: 0.8em;
     margin: 0px;
     overflow: auto;
