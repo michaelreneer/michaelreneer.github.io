@@ -81,8 +81,9 @@ MENUITEMS = (
 SOCIAL = (
     ('Email', 'mailto:michaelreneer@gmail.com'),
     ('GitHub', 'http://github.com/michaelreneer'),
+    ('Stack Overflow', 'http://stackoverflow.com/users/960078/michael-reneer'),
     ('Twitter', 'http://twitter.com/michaelreneer'),
-    ('Linkedin', 'http://www.linkedin.com/pub/michael-reneer/20/26/9a0/')
+    ('Linkedin', 'http://www.linkedin.com/in/michaelreneer')
 )
 THEME = 'theme'
 TWITTER_USERNAME = 'michaelreneer'
