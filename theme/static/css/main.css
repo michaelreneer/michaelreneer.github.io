@@ -19,12 +19,38 @@ body {
     margin: 0px;
 }
 
+h1 {
+    font-size: 2.3em;
+    line-height: 40px;
+}
+
+h2 {
+    font-size: 1.7em;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 1.3em;
+    line-height: 40px;
+}
+
+h4 {
+    font-size: 1.15em;
+}
+
+h5 {
+    font-size: 1.0em;
+}
+
+h6 {
+    font-size: 0.85em;
+}
+
 /* Header */
 
 body > header {
     background-color: #f4f4f4;
     border-bottom: 2px solid #cccccc;
-    line-height: 25px;
     margin: 0px 0px 40px 0px;
 }
 
@@ -56,6 +82,7 @@ body > header h2 {
 
 body > header nav {
     float: right;
+    line-height: 40px;
     margin: 10px 0px;
 }
 
@@ -141,17 +168,14 @@ article {
 }
 
 .article-full h2 {
-    font-size: 1.7em;
     margin: 20px 0px;
 }
 
 .article-full h3 {
-    font-size: 1.5em;
     margin: 20px 0px;
 }
 
 .article-full header {
-    line-height: normal;
     margin: 0px 0px 40px 0px;
 }
 
@@ -176,12 +200,10 @@ article {
 }
 
 .article-full header h1 {
-    font-size: 1.9em;
     margin: 0px 0px 5px 0px;
 }
 
-.article-full header h2 {
-    font-size: 1.0em;
+.article-full header h5 {
     font-weight: normal;
     margin: 5px 0px;
 }
@@ -203,6 +225,16 @@ article {
 .article-full p {
     margin: 20px 0px;
     text-align: justify;
+}
+
+.article-full table {
+    margin: 20px;
+}
+
+.article-full table th,
+.article-full table td {
+    border: 1px solid #cccccc;
+    padding: 5px 10px;
 }
 
 .article-full .highlight {
@@ -255,15 +287,9 @@ article {
 }
 
 .article-link h2,
-.article-summary h2 {
-    font-size: 1.7em;
-    font-weight: normal;
-    margin: 20px;
-}
-
-.article-link h3,
-.article-summary h3 {
-    font-size: 1.0em;
+.article-link h5,
+.article-summary h2,
+.article-summary h5 {
     font-weight: normal;
     margin: 20px;
 }
@@ -274,11 +300,16 @@ article {
     text-align: justify;
 }
 
+.article-link a {
+    height: 122px;
+}
+
 .article-link h2,
-.article-link h3,
-.article-link p {
-    margin: 20px 10px;
+.article-link h5 {
+    overflow: hidden;
     text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /* Project */
@@ -297,7 +328,6 @@ article {
 }
 
 .project-summary h2 {
-    font-size: 1.7em;
     font-weight: normal;
     margin: 0px;
     text-align: center;
@@ -337,6 +367,7 @@ article {
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+    
     body > header,
     body > footer.container {
         margin-left: -20px;
@@ -370,10 +401,22 @@ article {
         -webkit-transform: none;
         transform: none;
     }
+    
+    .article-link a {
+        height: auto;
+    }
+    
+    .article-link h2,
+    .article-link h5 {
+        overflow: visible;
+        text-overflow: clip;
+        white-space: normal;
+    }
 }
  
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    
     body > header h2 {
         float: none;
         text-align: center;
@@ -381,6 +424,7 @@ article {
     
     body > header nav {
         float: none;
+        line-height: 20px;
     }
     
     body > header nav li {

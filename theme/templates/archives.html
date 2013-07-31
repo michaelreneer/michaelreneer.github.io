@@ -4,30 +4,13 @@
 
 {% block content -%}
     <div class="row">
-        <div class="span6">
-            {%- for article in dates %}
-            {% if loop.index0 is even -%}
-            <article class="article-link">
-                <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
-                    <h2>{{ article.title }}</h2>
-                    <h3>{{ article.subtitle }}</h3>
-                </a>
-            </article>
-            {%- endif %}
-            {%- endfor %}
-        </div>
-        
-        <div class="span6">
-            {%- for article in dates %}
-            {% if loop.index0 is odd -%}
-            <article class="article-link">
-                <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
-                    <h2>{{ article.title }}</h2>
-                    <h3>{{ article.subtitle }}</h3>
-                </a>
-            </article>
-            {%- endif %}
-            {%- endfor %}
-        </div>
+        {%- for article in dates %}
+        <article class="article-link span6">
+            <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+                <h2>{{ article.title }}</h2>
+                <h5>{{ article.subtitle }}</h5>
+            </a>
+        </article>
+        {%- endfor %}
     </div>
 {%- endblock content %}

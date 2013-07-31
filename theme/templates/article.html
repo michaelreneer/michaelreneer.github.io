@@ -7,9 +7,9 @@
         <header>
             <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
             {% if article.category == "poetry" -%}
-            <h2>By {{ article.author }}</h2>
+            <h5>By {{ article.author }}</h5>
             {%- else -%}
-            <h2>{{ article.subtitle }}</h2>
+            <h5>{{ article.subtitle }}</h5>
             {%- endif %}
             <time title="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
         </header>
