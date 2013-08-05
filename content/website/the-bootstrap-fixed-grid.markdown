@@ -1,7 +1,7 @@
 Title: The Bootstrap Fixed Grid
 Date: 2013-4-14
 Tags: html5, css, bootstrap, responsive, fixed
-Subtitle: first crack at implementing a responsive fixed-width grid
+Subtitle: implementing a responsive fixed-width grid
 Summary: One of the first things I wanted to do with my blog - after exploring
          pelican - was to begin digging into some responsive layouts. I wanted
          a fixed-width design with various layouts and I wanted to test out a
@@ -40,7 +40,7 @@ Foundation, Frameless, and Bootsrtrap 3.0 sometime in the furture.
 
 [bootstrap]: http://twitter.github.io/bootstrap/ "Bootstrap"
 [bootstrap 3.0]: http://thenextweb.com/dd/2013/03/10/heres-an-early-look-at-bootstrap-3-rewritten-to-be-mobile-friendly-from-the-start/ "Bootstrap 3.0"
-[commit]: https://github.com/michaelreneer/michaelreneer.github.com/commit/9320672f46bd3334685ef7a6f064b09dfccaf9b0 "Commit"
+[commit]: http://github.com/michaelreneer/michaelreneer.github.com/commit/9320672f46bd3334685ef7a6f064b09dfccaf9b0 "Commit"
 [foundation]: http://foundation.zurb.com "Foundation"
 [frameless]: http://framelessgrid.com "Frameless"
 [mobile first]: http://www.lukew.com/ff/entry.asp?933 "Mobile First"

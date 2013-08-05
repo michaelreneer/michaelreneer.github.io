@@ -1,7 +1,7 @@
 Title: Hello World
 Date: 2012-12-9
 Tags: blog, pelican
-Subtitle: bored + learning python = a blog written with pelican
+Subtitle: bored + learning python = a blog + pelican
 Summary: I have recently begun working professionally with Python and decided
          in order to truly have any fun, I needed to dive in with some of my
          free time. For a while I have been interested in starting a blog.
@@ -22,8 +22,7 @@ project. Now here you are reading a hello world blog entry written in
 
 I am currently using OS X and the Terminal app. Here's what I did...
 
-Environment
-----------
+## Environment
 
 First install packages [pip][], [virtualenv][], and [virtualenvwrapper][].
 
@@ -44,8 +43,7 @@ Update `~/.bash_profile` by adding:
 
 Please read the [virtualenvwrapper reference][].
 
-Pelican
-----------
+## Pelican
 
 Create the virtual environment.
 
@@ -71,8 +69,7 @@ Run pelican quickstart.
 
 Please read the [pelican documentation][].
 
-GitHub
-----------
+## GitHub
 
 I also experimented a little with how the project lives in GitHub and locally.
 To start, the static html in the `master` branch of the project named
@@ -98,7 +95,7 @@ branch switching antics.
 [hyde]: http://hyde.github.com "Hyde"
 [jekyll]: http://github.com/mojombo/jekyll "Jekyll"
 [markdown]: http://daringfireball.net/projects/markdown/ "Markdown"
-[pelican]: https://github.com/getpelican/pelican "Pelican"
+[pelican]: http://github.com/getpelican/pelican "Pelican"
 [pelican documentation]: http://pelican.readthedocs.org/en/3.1.1/getting_started.html "Pelican Documentation"
 [python]: http://www.python.org "Python"
 [pip]: http://pypi.python.org/pypi/pip "pip"

@@ -1,7 +1,6 @@
 Title: About
 
-Professional
-----------
+## Professional
 
 I am starting to learning [Python][] - it's slowly growing on me, but what I
 truly enjoy is working with [Objective-C][] and [Cocoa Touch][], and mobile
@@ -20,8 +19,7 @@ everything from kiosk software to common application frameworks.
 And before that, I spent my time tinkering with [PHP][], [C++][], Java, HTML,
 CSS, Javascript, and [Illustrator][], and going to University.
 
-Personal
-----------
+## Personal
 
 <!-- ![Profile Picture][] -->
 
@@ -40,8 +38,7 @@ biking, camping, snowshoeing, and snowboarding - though I prefer snowshoeing to
 the others. I do not own a television, I find thought games like the
 [dollar auction][] fun, and there is little better than a good [IPA][].
 
-Site
-----------
+## Site
 
 The content of this site is written in [Markdown][] and built with [Pelican][]
 using a custom theme I built based on [HTML5 Boilerplate][]. The source and
@@ -60,10 +57,10 @@ Thanks.
 [android]: http://developer.android.com "Android"
 [asp.net mvc]: http://www.asp.net/mvc "ASP.NET MVC"
 [bash]: http://www.gnu.org/software/bash/manual/bashref.html "Bash"
-[cocoa touch]: https://developer.apple.com/technologies/ios/cocoa-touch.html "Cocoa Touch"
+[cocoa touch]: http://developer.apple.com/technologies/ios/cocoa-touch.html "Cocoa Touch"
 [c#]: http://msdn.microsoft.com/en-us/vstudio/hh341490.aspx "C#"
 [c++]: http://www.cplusplus.com "C++"
-[facebook]: https://developers.facebook.com "Facebook"
+[facebook]: http://developers.facebook.com "Facebook"
 [flex]: http://www.adobe.com/products/flex.html "Flex"
 [git]: http://git-scm.com "Git"
 [html5]: http://www.w3schools.com/html5/ "HTML5"
@@ -88,7 +85,7 @@ Thanks.
 [imperial]: http://boardgamegeek.com/boardgame/24181/imperial "Imperial"
 [ipa]: http://en.wikipedia.org/wiki/India_Pale_Ale "IPA"
 
-[cssmin]: https://github.com/zacharyvoase/cssmin "cssmin"
+[cssmin]: http://github.com/zacharyvoase/cssmin "cssmin"
 [github]: http://github.com "GitHub"
 [github buttons]: http://ghbtns.com "GitHub Buttons"
 [github pages]: http://pages.github.com "GitHub Pages"
@@ -97,6 +94,6 @@ Thanks.
 [markdown]: http://daringfireball.net/projects/markdown/ "Markdown"
 [pelican]: http://blog.getpelican.com "Pelican"
 [pygments]: http://pygments.org "Pygments"
-[this project]: https://github.com/michaelreneer/michaelreneer.github.com "This Project"
-[twitter buttons]: https://twitter.com/about/resources/buttons "Twitter Buttons"
-[webassets]: https://github.com/miracle2k/webassets "webassets"
+[this project]: http://github.com/michaelreneer/michaelreneer.github.com "This Project"
+[twitter buttons]: http://twitter.com/about/resources/buttons "Twitter Buttons"
+[webassets]: http://github.com/miracle2k/webassets "webassets"

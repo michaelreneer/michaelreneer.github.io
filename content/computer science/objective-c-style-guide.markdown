@@ -15,16 +15,14 @@ a codebase written in `objective-c` I prefer the following style:
 
 Consistent. Clean. Easy. Short.
 
-Whitespace
-----------
+## Whitespace
 
 - Use spaces, not tabs.
 - Do not wrap lines.
 - Do not open braces on a new line.
 - Use whitespace to group logical blocks of code.
 
-Structure
-----------
+## Structure
 
 - Use dot notation to access properties.
 - Use message notation to call a method.
@@ -34,8 +32,7 @@ Structure
 - Do not put two semicolons on the same line.
 - Use #pragma marks to logically group code.
 
-Declarations
-----------
+## Declarations
 
 - Do not declare iVars.
 - Do not put a space between the dereferencing oporator (asterisk) and the
@@ -44,21 +41,18 @@ Declarations
 - Do not accessing iVars, except in `-init`, `-dealloc`, or accessor.
 - Use namespace prefix for functions.
 
-Naming
-----------
+## Naming
 
 - Use descriptive property names.
 - Use descriptive method names.
 - Use namespace prefix for classes.
 
-Comments
-----------
+## Comments
 
 - Prefer self describing code to comments where possible.
 - Use `TODO:` `FIXME:` `!!!:` and `???:` where appropriate.
 
-Expressions
-----------
+## Expressions
 
 - Use literals.
 - Use `YES` or `NO` not `true` or `false`.
