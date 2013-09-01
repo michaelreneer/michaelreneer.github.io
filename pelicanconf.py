@@ -46,7 +46,7 @@ FILES_TO_COPY = (
 MARKUP = (
     'markdown',
 )
-PLUGIN_PATH = '/Users/MichaelReneer/.virtualenvs/michaelreneer.github.com/lib/python2.7/site-packages/pelican-plugins'
+PLUGIN_PATH = '/Users/michaelreneer/Documents/Developer/pelican-plugins'
 PLUGINS = [
     'assets',
     'sitemap',
