@@ -8,6 +8,7 @@ a {
 a:hover,
 a:focus {
     color: #ff6633;
+    text-decoration: none;
 }
 
 body {
@@ -57,44 +58,55 @@ body > header {
 body > header a {
     display: inline-block;
     text-transform: capitalize;
-    
-    -moz-transition: all 0.1s ease-out;
-    -ms-transition: all 0.1s ease-out;
-    -o-transition: all 0.1s ease-out;
-    -webkit-transition: all 0.1s ease-out;
-    transition: all 0.1s ease-out;
-}
-
-body > header a:hover {
-    
-    -moz-transform: scale(1.10);
-    -ms-transform: scale(1.10);
-    -o-transform: scale(1.10);
-    -webkit-transform: scale(1.10);
-    transform: scale(1.10);
 }
 
 body > header h2 {
-    float: left;
     font-weight: normal;
     margin: 10px 0px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    body > header h2 {
+        float: left;
+        text-align: left;
+    }
 }
 
 body > header nav {
-    float: right;
-    line-height: 40px;
+    line-height: 20px;
     margin: 10px 0px;
+}
+
+@media (min-width: 768px) {
+    body > header nav {
+        float: right;
+        line-height: 40px;
+    }
 }
 
 body > header nav li {
     display: inline-block;
-    margin: 0px 0px 0px 20px;
+    margin: 0px 10px;
+}
+
+@media (min-width: 768px) {
+    body > header nav li {
+        margin: 0px 0px 0px 20px;
+    }
 }
 
 body > header nav ul {
     list-style: none;
     margin: 0px;
     padding: 0px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    body > header nav ul {
+        text-align: left;
+    }
 }
 
 /* Footer */
@@ -110,22 +122,10 @@ body > footer a {
     color: #888888;
     display: inline-block;
     text-transform: uppercase;
-    
-    -moz-transition: all 0.1s ease-out;
-    -ms-transition: all 0.1s ease-out;
-    -o-transition: all 0.1s ease-out;
-    -webkit-transition: all 0.1s ease-out;
-    transition: all 0.1s ease-out;
 }
 
 body > footer a:hover {
     color: #ff6633;
-    
-    -moz-transform: scale(1.10);
-    -ms-transform: scale(1.10);
-    -o-transform: scale(1.10);
-    -webkit-transform: scale(1.10);
-    transform: scale(1.10);
 }
 
 body > footer li {
@@ -181,22 +181,10 @@ article {
 
 .article-full header a {
     display: inline-block;
-    
-    -moz-transition: all 0.1s ease-out;
-    -ms-transition: all 0.1s ease-out;
-    -o-transition: all 0.1s ease-out;
-    -webkit-transition: all 0.1s ease-out;
-    transition: all 0.1s ease-out;
 }
 
 .article-full header a:hover {
     color: #ff6633;
-    
-    -moz-transform: scale(1.10);
-    -ms-transform: scale(1.10);
-    -o-transform: scale(1.10);
-    -webkit-transform: scale(1.10);
-    transform: scale(1.10);
 }
 
 .article-full header h1 {
@@ -265,12 +253,6 @@ article {
     border-radius: 4px;
     box-shadow: 0px 0px 3px 0px #dddddd;
     display: block;
-    
-    -moz-transition: all 0.1s ease-out;
-    -ms-transition: all 0.1s ease-out;
-    -o-transition: all 0.1s ease-out;
-    -webkit-transition: all 0.1s ease-out;
-    transition: all 0.1s ease-out;
 }
 
 .article-link a:hover,
@@ -278,12 +260,12 @@ article {
     border: 1px solid #ff6633;
     box-shadow: 0px 0px 3px 0px #ffaa99;
     color: #ff6633;
-    
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+    .article-link a {
+        height: 122px;
+    }
 }
 
 .article-link h2,
@@ -294,22 +276,19 @@ article {
     margin: 20px;
 }
 
+@media (min-width: 768px) {
+    .article-link h2,
+    .article-link h5 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
 .article-link p,
 .article-summary p {
     margin: 20px;
     text-align: justify;
-}
-
-.article-link a {
-    height: 122px;
-}
-
-.article-link h2,
-.article-link h5 {
-    overflow: hidden;
-    text-align: center;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 
 /* Project */
@@ -346,96 +325,29 @@ article {
     text-align: center;
 }
 
-/* 404 */
+/* Other */
 
-/* About */
-
-#profile-picture {
-    float: right;
-    height: 250px;
-    margin: 20px 0px 20px 20px;
-    width: 200px;
-}
-
-/* Large desktop */
-@media (min-width: 1200px) {
-}
- 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-}
- 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-    
-    body > header,
-    body > footer.container {
-        margin-left: -20px;
-        margin-right: -20px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    
+@media (min-width: 768px) {
     body > header a,
     body > footer a,
     .article-full header a,
     .article-link a,
     .article-summary a {
-        
-        -moz-transition: none;
-        -ms-transition: none;
-        -o-transition: none;
-        -webkit-transition: none;
-        transition: none;
+        -moz-transition: all 0.1s ease-out;
+        -ms-transition: all 0.1s ease-out;
+        -o-transition: all 0.1s ease-out;
+        -webkit-transition: all 0.1s ease-out;
+        transition: all 0.1s ease-out;
     }
-    
     body > header a:hover,
     body > footer a:hover,
     .article-full header a:hover,
     .article-link a:hover,
     .article-summary a:hover {
-        
-        -moz-transform: none;
-        -ms-transform: none;
-        -o-transform: none;
-        -webkit-transform: none;
-        transform: none;
-    }
-    
-    .article-link a {
-        height: auto;
-    }
-    
-    .article-link h2,
-    .article-link h5 {
-        overflow: visible;
-        text-overflow: clip;
-        white-space: normal;
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
     }
 }
- 
-/* Landscape phones and down */
-@media (max-width: 480px) {
-    
-    body > header h2 {
-        float: none;
-        text-align: center;
-    }
-    
-    body > header nav {
-        float: none;
-        line-height: 20px;
-    }
-    
-    body > header nav li {
-        margin: 0px 10px;
-    }
-    
-    body > header nav ul {
-        text-align: center;
-    }
-}
-
-/* Developement */
-
-/** {border: 1px solid black;}*/

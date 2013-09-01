@@ -4,7 +4,7 @@
 
 {% block content -%}
     <div class="row">
-        <div class="span6">
+        <div class="col-sm-6">
             {%- for page in pages if page.is_project == "yes" %}
             {% if loop.index0 % 2 == 0 -%}
             <article class="project-summary">
@@ -26,7 +26,7 @@
             {%- endfor %}
         </div>
         
-        <div class="span6">
+        <div class="col-sm-6">
             {%- for page in pages if page.is_project == "yes" %}
             {% if loop.index0 % 2 != 0 -%}
             <article class="project-summary">

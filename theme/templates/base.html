@@ -16,10 +16,6 @@
     <meta property="fb:app_id" content="{{ FACEBOOK_APP_ID }}">
     {%- endif %}
     
-    {%- assets filters="cssmin", output="css/normalize.min.css", "css/normalize.css" -%}
-    <link href="{{ SITEURL }}/{{ ASSET_URL }}" rel="stylesheet">
-    {%- endassets %}
-    
     {%- assets filters="cssmin", output="css/bootstrap.min.css", "css/bootstrap.css" -%}
     <link href="{{ SITEURL }}/{{ ASSET_URL }}" rel="stylesheet">
     {%- endassets %}
