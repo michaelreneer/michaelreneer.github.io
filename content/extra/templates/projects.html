@@ -4,10 +4,9 @@
 
 {% block content -%}
     <div class="row">
-        <div class="col-sm-6">
-            {%- for page in pages if page.is_project == "yes" %}
-            {% if loop.index0 % 2 == 0 -%}
-            <article class="project-summary">
+        {%- for page in pages if page.is_project == "yes" %}
+        <article class="col-sm-6 project-summary">
+            <a name="{{ page.url }}">
                 <header>
                     <h2>{{ page.title }}</h2>
                 </header>
@@ -19,33 +18,10 @@
                     {% set GITHUB_REPO = page.github_repo %}
                     {% include "github-fork.html" %}
                     {% include "github-star.html" %}
-                    {% include "twitter-share.html" %}
+                    <!-- {% include "twitter-share.html" %} -->
                 </footer>
-            </article>
-            {%- endif %}
-            {%- endfor %}
-        </div>
-        
-        <div class="col-sm-6">
-            {%- for page in pages if page.is_project == "yes" %}
-            {% if loop.index0 % 2 != 0 -%}
-            <article class="project-summary">
-                <header>
-                    <h2>{{ page.title }}</h2>
-                </header>
-                
-                {{ page.content }}
-                
-                <footer>
-                    {% set GITHUB_USER = page.github_user %}
-                    {% set GITHUB_REPO = page.github_repo %}
-                    {% include "github-fork.html" %}
-                    {% include "github-star.html" %}
-                    {% include "twitter-share.html" %}
-                </footer>
-            </article>
-            {%- endif %}
-            {%- endfor %}
-        </div>
+            </a>
+        </article>
+        {%- endfor %}
     </div>
 {%- endblock content %}

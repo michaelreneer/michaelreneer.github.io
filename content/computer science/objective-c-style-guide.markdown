@@ -38,7 +38,8 @@ Consistent. Clean. Easy. Short.
 - Do not put a space between the dereferencing oporator (asterisk) and the
     variable.
 - Do not put a space between protocol and the type.
-- Do not accessing iVars, except in `-init`, `-dealloc`, or accessor.
+- Do not accessing iVars, except in `-init`, `-dealloc`, or the accessors for
+    it's property.
 - Use namespace prefix for functions.
 
 ## Naming

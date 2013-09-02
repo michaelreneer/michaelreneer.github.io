@@ -41,9 +41,10 @@ the others. I do not own a television, I find thought games like the
 ## Site
 
 The content of this site is written in [Markdown][] and built with [Pelican][]
-using a custom theme I built based on [HTML5 Boilerplate][]. The source and
-theme for [this project][] can be found on [GitHub][], and the site is hosted
-on [GitHub Pages][].
+using a custom theme I created based on [HTML5 Boilerplate][] and using
+[Bootstrap][] and [Normalize][] to implement a [mobile first][] design. The
+source and theme for [this project][] can be found on [GitHub][], and the site
+is hosted on [GitHub Pages][].
 
 In addition to Pelican and Markdown, I am using [Jinja][], [Pygments][],
 [webassets][], and [cssmin][] either as a plugin for, or as a dependency of,
@@ -85,6 +86,7 @@ Thanks.
 [imperial]: http://boardgamegeek.com/boardgame/24181/imperial "Imperial"
 [ipa]: http://en.wikipedia.org/wiki/India_Pale_Ale "IPA"
 
+[bootstrap]: http://getbootstrap.com "Bootstrap"
 [cssmin]: http://github.com/zacharyvoase/cssmin "cssmin"
 [github]: http://github.com "GitHub"
 [github buttons]: http://ghbtns.com "GitHub Buttons"
@@ -92,8 +94,10 @@ Thanks.
 [html5 boilerplate]: http://html5boilerplate.com "HTML5 Boilerplate"
 [jinja]: http://jinja.pocoo.org "Jinja"
 [markdown]: http://daringfireball.net/projects/markdown/ "Markdown"
+[mobile first]: http://www.lukew.com/ff/entry.asp?933 "Mobile First"
+[normalize]: http://necolas.github.io/normalize.css/ "Normalize"
 [pelican]: http://blog.getpelican.com "Pelican"
 [pygments]: http://pygments.org "Pygments"
-[this project]: http://github.com/michaelreneer/michaelreneer.github.com "This Project"
+[this project]: http://github.com/michaelreneer/michaelreneer.github.io "This Project"
 [twitter buttons]: http://twitter.com/about/resources/buttons "Twitter Buttons"
 [webassets]: http://github.com/miracle2k/webassets "webassets"

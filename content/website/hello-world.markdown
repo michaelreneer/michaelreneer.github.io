@@ -48,16 +48,16 @@ Please read the [virtualenvwrapper reference][].
 Create the virtual environment.
 
     :::bash
-    mkvirtualenv --no-site-packages michaelreneer.github.com
+    mkvirtualenv --no-site-packages michaelreneer.github.io
 
 Setup the project.
 
     :::bash
-    mkdir ~/Documents/Developer/michaelreneer.github.com
-    cd ~/Documents/Developer/michaelreneer.github.com
+    mkdir ~/Documents/Developer/michaelreneer.github.io
+    cd ~/Documents/Developer/michaelreneer.github.io
     setvirtualenvproject
 
-Install packages.
+Install the pelican and Markdown packages.
 
     :::bash
     pip install pelican Markdown
@@ -67,13 +67,19 @@ Run pelican quickstart.
     :::bash
     pelican-quickstart
 
+Install [pelican-plugins][].
+
+    :::bash
+    cd ~/Documents/Developer/
+    git clone https://github.com/getpelican/pelican-plugins
+
 Please read the [pelican documentation][].
 
 ## GitHub
 
 I also experimented a little with how the project lives in GitHub and locally.
 To start, the static html in the `master` branch of the project named
-`USERNAME.github.com` is served up as your user page. Free hosting.
+`USERNAME.github.io` is served up as your user page. Free hosting.
 
 I first tried organizing the source that generated the html as a subdirectory in
 the `master` branch. This was nice because I had only one branch to manage; but
@@ -97,6 +103,7 @@ branch switching antics.
 [markdown]: http://daringfireball.net/projects/markdown/ "Markdown"
 [pelican]: http://github.com/getpelican/pelican "Pelican"
 [pelican documentation]: http://pelican.readthedocs.org/en/3.1.1/getting_started.html "Pelican Documentation"
+[pelican-plugins]: https://github.com/getpelican/pelican-plugins "Pelican-Plugins"
 [python]: http://www.python.org "Python"
 [pip]: http://pypi.python.org/pypi/pip "pip"
 [ruby]: http://www.ruby-lang.org "Ruby"
