@@ -2,10 +2,6 @@ Title: Save Me
 Date: 2013-3-21
 Tags: poetry, pirates, love
 Subtitle: me name is pirate joe flo
-Summary: me name is pirate joe flo<br>
-         and we gotta hacked-up boat<br>
-         rowin' and rowin' to shore<br>
-         lookin' in me cracked-up scope<br>
 
 me name is pirate joe flow  
 and we gotta hacked-up boat  

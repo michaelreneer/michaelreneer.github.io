@@ -2,12 +2,6 @@ Title: Crows Upon The Horizon
 Date: 2013-7-29
 Tags: poetry, grandpa, scary
 Subtitle: oh sweet cryin' babe
-Summary: oh sweet cryin' babe<br>
-         stepped unto your brave new world<br>
-         with apollo on horizon<br>
-         and on a shaky voice<br>
-         crows calling all the land rejoice<br>
-         for the dawning of a newborn<br>
 
 oh sweet cryin' babe  
 stepped unto your brave new world  

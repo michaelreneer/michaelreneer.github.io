@@ -2,14 +2,13 @@ Title: First Week At Microsoft
 Date: 2013-9-26
 Tags: life, work, microsoft
 Subtitle: how I learned to use Outlook and sing karaoke
-Summary: 
 
 [Microsoft][] offered me a position as an [SDE][]. I accepted. I have experience
 developing on the various Apple platforms and frameworks, and Microsoft is
 realigning as a [device and services][] company with some of the most useful
 applications offered on Apple platforms.
 
-Thus I started at Microsoft...
+Thus I started at Microsoft ...
 
 Approximately two-hundred new hires shuffle into the
 [Microsoft Visitor Center][] and I am floored at the array of devices to
@@ -64,7 +63,7 @@ like [5-a-side][] coed matches. *Excited*.
 
 I begin refactoring some code and learn about Microsoft's coding guidelines.
 
-...which appoximately sums up one week.
+... which appoximately sums up one week.
 
 [5-a-side]: http://en.wikipedia.org/wiki/five-a-side_football "5-A-Side"
 [appkit]: http://developer.apple.com/library/mac/documentation/cocoa/reference/applicationkit/objc_classic/_index.html "AppKit"

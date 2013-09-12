@@ -2,10 +2,6 @@ Title: The Man Who Stopped
 Date: 2013-4-21
 Tags: poetry, pirates, love
 Subtitle: this end of the road comes nearer
-Summary: this end of the road comes nearer<br>
-         becoming trees on either side<br>
-         and footsteps winding among them<br>
-         to where the lost men hide<br>
 
 this end of the road comes nearer  
 becoming trees on either side  

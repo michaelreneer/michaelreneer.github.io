@@ -2,10 +2,6 @@ Title: Music Box
 Date: 2013-2-22
 Tags: poetry, ocean, love
 Subtitle: oh music box of the ocean
-Summary: oh music box of the ocean<br>
-         you washed ashore in mystery<br>
-         pushed overboard in commotion<br>
-         oh you were lost far out at sea<br>
 
 oh music box of the ocean  
 you washed ashore in mystery  

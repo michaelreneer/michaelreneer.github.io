@@ -2,10 +2,6 @@ Title: A Ghouls Victim
 Date: 2013-2-11
 Tags: poetry, halloween, scary
 Subtitle: so ghouls think they have no homes
-Summary: so ghouls think they have no homes<br>
-         roaming streets and innocents throats<br>
-         climbed up beneath from dirt and tombs<br>
-         for blood to brave the widest moats<br>
 
 so ghouls think they have no homes  
 roaming streets and innocents throats  

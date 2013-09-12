@@ -2,10 +2,6 @@ Title: The Bootstrap Fixed Grid
 Date: 2013-4-14
 Tags: html5, css, bootstrap, responsive, fixed
 Subtitle: implementing a responsive fixed grid
-Summary: One of the first things I wanted to do with my blog - after exploring
-         pelican - was to begin digging into some responsive layouts. I wanted
-         a fixed-width design with various layouts and I wanted to test out a
-         framework instead of build from scratch.
 
 One of the first things I wanted to do with my blog - after exploring pelican -
 was to begin digging into some responsive layouts. I wanted a fixed grid design
