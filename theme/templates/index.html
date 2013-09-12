@@ -34,12 +34,18 @@
     #}
     
     {%- for article in dates[0:5] %}
-    <article class="article-summary">
-        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
-            <h2>{{ article.title }}</h2>
-            
-            {{ article.summary }}
-        </a>
+    <article class="article-full article-summary panel">
+        <header>
+            <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+            {% if article.category == "poetry" -%}
+            <h5>By {{ article.author }}</h5>
+            {%- else -%}
+            <h5>{{ article.subtitle }}</h5>
+            {%- endif %}
+            <time title="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+        </header>
+        
+        {{ article.summary }}
     </article>
     {%- endfor %}
 {%- endblock content %}

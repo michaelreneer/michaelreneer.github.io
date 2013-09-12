@@ -5,10 +5,10 @@
 {% block content -%}
     <div class="row">
         {%- for page in pages if page.is_project == "yes" %}
-        <article class="col-sm-6 project-summary">
-            <a name="{{ page.url }}">
+        <div class="col-sm-6">
+            <article class="project-summary panel">
                 <header>
-                    <h2>{{ page.title }}</h2>
+                    <h2><a name="{{ page.url }}">{{ page.title }}</a></h2>
                 </header>
                 
                 {{ page.content }}
@@ -18,10 +18,9 @@
                     {% set GITHUB_REPO = page.github_repo %}
                     {% include "github-fork.html" %}
                     {% include "github-star.html" %}
-                    <!-- {% include "twitter-share.html" %} -->
                 </footer>
-            </a>
-        </article>
+            </article>
+        </div>
         {%- endfor %}
     </div>
 {%- endblock content %}

@@ -5,12 +5,14 @@
 {% block content -%}
     <div class="row">
         {%- for article in dates %}
-        <article class="col-sm-6 article-link">
-            <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
-                <h2>{{ article.title }}</h2>
-                <h5>{{ article.subtitle }}</h5>
-            </a>
-        </article>
+        <div class="col-sm-6">
+            <article class="article-link">
+                <a class="panel" href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+                    <h2>{{ article.title }}</h2>
+                    <h5>{{ article.subtitle }}</h5>
+                </a>
+            </article>
+        </div>
         {%- endfor %}
     </div>
 {%- endblock content %}

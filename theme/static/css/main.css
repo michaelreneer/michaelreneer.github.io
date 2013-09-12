@@ -47,7 +47,6 @@ body > header {
     margin: 0px 0px 40px 0px;
 }
 body > header a {
-    display: inline-block;
     text-transform: capitalize;
 }
 body > header h2 {
@@ -102,7 +101,6 @@ body > footer {
 }
 body > footer a {
     color: #888888;
-    display: inline-block;
     text-transform: uppercase;
 }
 body > footer a:hover {
@@ -140,34 +138,38 @@ article {
 .article-full aside span {
     float: left;
 }
-.article-full h2 {
-    margin: 20px 0px;
+.article-full blockquote {
+    
 }
-.article-full h3 {
+.article-full h1,
+.article-full h2,
+.article-full h3,
+.article-full h4,
+.article-full h5,
+.article-full h6,
+.article-full p {
     margin: 20px 0px;
 }
 .article-full header {
     margin: 0px 0px 40px 0px;
 }
-.article-full header a {
-    display: inline-block;
-}
-.article-full header a:hover {
-    color: #ff6633;
-}
-.article-full header h1 {
-    margin: 0px 0px 5px 0px;
+.article-full header h1,
+.article-full header h2,
+.article-full header h3,
+.article-full header h4,
+.article-full header h5,
+.article-full header h6,
+.article-full header time {
+    margin: 5px 0px;
 }
 .article-full header h5 {
     font-weight: normal;
-    margin: 5px 0px;
 }
 .article-full header time {
     display: block;
     color: #888888;
     font-size: 0.8em;
     font-variant: small-caps;
-    margin: 5px 0px 0px 0px;
 }
 .article-full img {
     background-color: #fafafa;
@@ -175,7 +177,6 @@ article {
     padding: 5px;
 }
 .article-full p {
-    margin: 20px 0px;
     text-align: justify;
 }
 .article-full table {
@@ -204,26 +205,11 @@ article {
     margin: 40px 0px 0px 0px;
     padding: 20px 0px 0px 0px;
 }
-.article-link a,
-.article-summary a {
-    background-color: #fafafa;
-    border: 1px solid #dddddd;
-    border-radius: 4px;
-    box-shadow: 0px 0px 3px 0px #dddddd;
-    display: block;
-}
-.article-link a:hover,
-.article-summary a:hover {
-    border: 1px solid #ff6633;
-    box-shadow: 0px 0px 3px 0px #ffaa99;
-    color: #ff6633;
-}
+
 .article-link h2,
-.article-link h5,
-.article-summary h2,
-.article-summary h5 {
+.article-link h5 {
     font-weight: normal;
-    margin: 20px;
+    margin: 20px 20px;
 }
 @media (min-width: 768px) {
     .article-link h2,
@@ -239,40 +225,32 @@ article {
         height: 20px;
     }
 }
-.article-link p,
-.article-summary p {
-    margin: 20px;
-    text-align: justify;
+
+.article-summary {
+    padding: 0px 20px;
+}
+.article-summary header {
+    margin: 20px 0px;
 }
 
 /* Project */
 
 .project-summary a {
-    color: #333333;
-    background-color: #fafafa;
-    border: 1px solid #dddddd;
-    border-radius: 4px;
-    box-shadow: 0px 0px 4px 0px #dddddd;
-    display: block;
 }
-.project-summary footer {
-    margin: 40px 10px 20px 10px;
+.project-summary a:hover {
+    color: #333333;
+}
+.project-summary footer,
+.project-summary header,
+.project-summary p {
+    margin: 20px;
     text-align: center;
 }
 .project-summary h2 {
     font-weight: normal;
-    margin: 0px;
-    text-align: center;
-}
-.project-summary header {
-    margin: 20px 10px;
 }
 .project-summary iframe {
     margin: 0px 10px;
-}
-.project-summary p {
-    margin: 20px 10px;
-    text-align: center;
 }
 @media (min-width: 768px) {
     .project-summary h2,
@@ -285,12 +263,23 @@ article {
 
 /* Other */
 
+.panel {
+    background-color: #fafafa;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px #dddddd;
+    display: block !important;
+}
+a.panel:hover {
+    border: 1px solid #ff6633;
+    box-shadow: 0px 0px 3px 0px #ffaa99;
+    color: #ff6633;
+}
 @media (min-width: 768px) {
     body > header a,
     body > footer a,
-    .article-full header a,
-    .article-link a,
-    .article-summary a {
+    .article-link a {
+        display: inline-block;
         -moz-transition: all 0.1s ease-out;
         -ms-transition: all 0.1s ease-out;
         -o-transition: all 0.1s ease-out;
@@ -299,9 +288,7 @@ article {
     }
     body > header a:hover,
     body > footer a:hover,
-    .article-full header a:hover,
-    .article-link a:hover,
-    .article-summary a:hover {
+    .article-link a:hover {
         -moz-transform: scale(1.05);
         -ms-transform: scale(1.05);
         -o-transform: scale(1.05);
