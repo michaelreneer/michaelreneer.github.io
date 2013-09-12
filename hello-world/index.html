@@ -7,13 +7,13 @@
     
     <title>Hello World | Michael Kelly Reneer</title>
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Michael Kelly Reneer">
     <meta name="description" content="">
     <meta name="keywords" content="">
     
-    <link href="http://michaelreneer.com/theme/css/normalize.min.css?8d128ce1" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/bootstrap.min.css?9d88f119" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/pygments.min.css?cacdaf45" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/main.min.css?5e92954f" rel="stylesheet">    
-    <link href="http://michaelreneer.com/feeds/all.atom.xml" rel="alternate" type="application/atom+xml" title="Michael Kelly Reneer Atom Feed" />    
+    <link href="http://michaelreneer.com/theme/css/bootstrap.min.css?3a2b6bde" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/pygments.min.css?cacdaf45" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/main.min.css?61ff0fdf" rel="stylesheet">    
+    <link href="http://michaelreneer.com/feeds/all.atom.xml" rel="alternate" type="application/atom+xml" title="Michael Kelly Reneer Atom Feed">    
         
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -34,7 +34,7 @@
         <article class="article-full">
         <header>
             <h1><a href="http://michaelreneer.com/hello-world/" rel="bookmark" title="Permalink to Hello World">Hello World</a></h1>
-            <h2>bored + learning python = a blog written with pelican</h2>            <time title="2012-12-09T00:00:00">Sun 09 December 2012</time>
+            <h5>bored + learning python = a blog + pelican</h5>            <time title="2012-12-09T00:00:00">Sun 09 December 2012</time>
         </header>
         
         <p>I have recently begun working professionally with <a href="http://www.python.org" title="Python">Python</a> and decided in
@@ -43,12 +43,12 @@ For a while I have been interested in starting a blog. Being more keen on
 static site generation than <a href="http://wordpress.com" title="WordPress">WordPress</a> configuration and wanting to learn
 python - I started looking for a python solution for a personal blog.</p>
 <p>After a few minutes of googling I gave <a href="http://hyde.github.com" title="Hyde">Hyde</a> a try. Installed everything, got
-everything working, building, got real excited, etc... and then decided it
+everything working, building, got real excited, etc ... and then decided it
 wasn't for me. Not really sure what turned me off. Kept looking and found
-<a href="https://github.com/getpelican/pelican" title="Pelican">Pelican</a> which had some great documentation and lot of activity on the
+<a href="http://github.com/getpelican/pelican" title="Pelican">Pelican</a> which had some great documentation and lot of activity on the
 project. Now here you are reading a hello world blog entry written in
 <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a>, built with pelican, and hosted on <a href="http://github.com" title="GitHub">GitHub</a>.</p>
-<p>I am currently using OS X and the Terminal app. Here's what I did...</p>
+<p>I am currently using OS X and the Terminal app. Here's what I did ...</p>
 <h2>Environment</h2>
 <p>First install packages <a href="http://pypi.python.org/pypi/pip" title="pip">pip</a>, <a href="http://pypi.python.org/pypi/virtualenv" title="virtualenv">virtualenv</a>, and <a href="http://pypi.python.org/pypi/virtualenvwrapper" title="virtualenvwrapper">virtualenvwrapper</a>.</p>
 <div class="highlight"><pre>sudo easy_install pip
@@ -70,18 +70,18 @@ sudo pip install virtualenvwrapper
 <p>Please read the <a href="http://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html" title="virtualenvwrapper goodies">virtualenvwrapper reference</a>.</p>
 <h2>Pelican</h2>
 <p>Create the virtual environment.</p>
-<div class="highlight"><pre>mkvirtualenv --no-site-packages michaelreneer.github.com
+<div class="highlight"><pre>mkvirtualenv --no-site-packages michaelreneer.github.io
 </pre></div>
 
 
 <p>Setup the project.</p>
-<div class="highlight"><pre>mkdir ~/Documents/Developer/michaelreneer.github.com
-<span class="nb">cd</span> ~/Documents/Developer/michaelreneer.github.com
+<div class="highlight"><pre>mkdir ~/Documents/Developer/michaelreneer.github.io
+<span class="nb">cd</span> ~/Documents/Developer/michaelreneer.github.io
 setvirtualenvproject
 </pre></div>
 
 
-<p>Install packages.</p>
+<p>Install the pelican and Markdown packages.</p>
 <div class="highlight"><pre>pip install pelican Markdown
 </pre></div>
 
@@ -91,11 +91,17 @@ setvirtualenvproject
 </pre></div>
 
 
+<p>Install <a href="https://github.com/getpelican/pelican-plugins" title="Pelican-Plugins">pelican-plugins</a>.</p>
+<div class="highlight"><pre><span class="nb">cd</span> ~/Documents/Developer/
+git clone https://github.com/getpelican/pelican-plugins
+</pre></div>
+
+
 <p>Please read the <a href="http://pelican.readthedocs.org/en/3.1.1/getting_started.html" title="Pelican Documentation">pelican documentation</a>.</p>
 <h2>GitHub</h2>
 <p>I also experimented a little with how the project lives in GitHub and locally.
 To start, the static html in the <code>master</code> branch of the project named
-<code>USERNAME.github.com</code> is served up as your user page. Free hosting.</p>
+<code>USERNAME.github.io</code> is served up as your user page. Free hosting.</p>
 <p>I first tried organizing the source that generated the html as a subdirectory in
 the <code>master</code> branch. This was nice because I had only one branch to manage; but
 because everything was in one branch, managing pull requests would be more

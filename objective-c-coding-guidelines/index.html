@@ -5,15 +5,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Objective-C Style Guide | Michael Kelly Reneer</title>
+    <title>Objective-C Coding Guidelines | Michael Kelly Reneer</title>
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Michael Kelly Reneer">
     <meta name="description" content="">
     <meta name="keywords" content="">
     
-    <link href="http://michaelreneer.com/theme/css/normalize.min.css?8d128ce1" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/bootstrap.min.css?9d88f119" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/pygments.min.css?cacdaf45" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/main.min.css?5e92954f" rel="stylesheet">    
-    <link href="http://michaelreneer.com/feeds/all.atom.xml" rel="alternate" type="application/atom+xml" title="Michael Kelly Reneer Atom Feed" />    
+    <link href="http://michaelreneer.com/theme/css/bootstrap.min.css?3a2b6bde" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/pygments.min.css?cacdaf45" rel="stylesheet"><link href="http://michaelreneer.com/theme/css/main.min.css?61ff0fdf" rel="stylesheet">    
+    <link href="http://michaelreneer.com/feeds/all.atom.xml" rel="alternate" type="application/atom+xml" title="Michael Kelly Reneer Atom Feed">    
         
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -33,41 +33,30 @@
     <div class="container">
         <article class="article-full">
         <header>
-            <h1><a href="http://michaelreneer.com/objective-c-style-guide/" rel="bookmark" title="Permalink to Objective-C Style Guide">Objective-C Style Guide</a></h1>
-            <h2>reading code should not be difficult</h2>            <time title="2013-03-02T00:00:00">Sat 02 March 2013</time>
+            <h1><a href="http://michaelreneer.com/objective-c-coding-guidelines/" rel="bookmark" title="Permalink to Objective-C Coding Guidelines">Objective-C Coding Guidelines</a></h1>
+            <h5>reading code should not be difficult</h5>            <time title="2013-03-02T00:00:00">Sat 02 March 2013</time>
         </header>
         
         <p>Understanding an algorithm or some bit code can be difficult, but reading it
-should not be. This means that a coding style should be agreed on and used. It
-also means that when working with someone elses code, it's more important to
-be consistent than creative. When I find myself owning code or maintaining
-a codebase written in <code>objective-c</code> I prefer the following style:</p>
+should not be. This means that a coding guideline should be agreed on and used.
+It also means that when working with someone elses code, it is more important
+to be consistent than creative. When I find myself owning code in <code>objective-c</code>
+I prefer to follow Apple's exisiting <a href="http://developer.apple.com/library/mac/#documentation/cocoa/conceptual/codingguidelines/codingguidelines.html" title="Coding Guidelines For Cocoa">Coding Guidelines for Cocoa</a> augmented
+with the following style:</p>
 <p>Consistent. Clean. Easy. Short.</p>
 <h2>Whitespace</h2>
 <ul>
 <li>Use spaces, not tabs.</li>
 <li>Do not wrap lines.</li>
 <li>Do not open braces on a new line.</li>
+<li>End files with a newline.</li>
 <li>Use whitespace to group logical blocks of code.</li>
 </ul>
 <h2>Structure</h2>
 <ul>
-<li>Use dot notation to access properties.</li>
-<li>Use message notation to call a method.</li>
 <li>Do not <code>#import</code> in the header, except the superclass, protocols, and enums.</li>
 <li>Import root frameworks, not files from those frameworks.</li>
-<li>Do not declare methods in the private interface.</li>
-<li>Do not put two semicolons on the same line.</li>
 <li>Use #pragma marks to logically group code.</li>
-</ul>
-<h2>Declarations</h2>
-<ul>
-<li>Do not declare iVars.</li>
-<li>Do not put a space between the dereferencing oporator (asterisk) and the
-    variable.</li>
-<li>Do not put a space between protocol and the type.</li>
-<li>Do not accessing iVars, except in <code>-init</code>, <code>-dealloc</code>, or accessor.</li>
-<li>Use namespace prefix for functions.</li>
 </ul>
 <h2>Naming</h2>
 <ul>
@@ -80,12 +69,26 @@ a codebase written in <code>objective-c</code> I prefer the following style:</p>
 <li>Prefer self describing code to comments where possible.</li>
 <li>Use <code>TODO:</code> <code>FIXME:</code> <code>!!!:</code> and <code>???:</code> where appropriate.</li>
 </ul>
+<h2>Declarations</h2>
+<ul>
+<li>Do not declare iVars.</li>
+<li>Do not declare methods in the private interface.</li>
+<li>Do not put a space between the dereferencing oporator (asterisk) and the
+    variable.</li>
+<li>Do not put a space between the type and the protocol it conforms to.</li>
+<li>Do not accessing iVars, except in <code>-init</code>, <code>-dealloc</code>, or the accessors for
+    it's property.</li>
+<li>Use namespace prefix for functions.</li>
+</ul>
 <h2>Expressions</h2>
 <ul>
+<li>Use dot notation to access properties.</li>
+<li>Use message notation to call a method.</li>
 <li>Use literals.</li>
 <li>Use <code>YES</code> or <code>NO</code> not <code>true</code> or <code>false</code>.</li>
 <li>Use explicit comparisons, except for <code>BOOL</code> type's.</li>
 </ul>
+<p>This is a living document.</p>
         
         <aside class="clearfix">
                         
@@ -119,8 +122,8 @@ a codebase written in <code>objective-c</code> I prefer the following style:</p>
         DISQUS.reset({
             reload: true,
             config: function () {  
-                this.page.identifier = 'objective-c-style-guide/';
-                this.page.url = 'http://michaelreneer.com/objective-c-style-guide/';
+                this.page.identifier = 'objective-c-coding-guidelines/';
+                this.page.url = 'http://michaelreneer.com/objective-c-coding-guidelines/';
             }
         });
     }, false);
