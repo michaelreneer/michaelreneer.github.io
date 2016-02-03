@@ -1,0 +1,11 @@
+    <footer class="site-footer">
+        <div class="container">
+            <ul>
+                {% for item in site.data.social %}
+                <li><a href="{{ item.url | prepend: site.baseurl }}" title="{{ item.title }}">{{ item.title }}</a></li>
+                {% endfor %}
+                <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" title="Feed" rel="alternate" type="application/rss+xml">Feed</a></li>
+                <li>{{ site.copyright }}</li>
+            </ul>
+        </div>
+    </footer>

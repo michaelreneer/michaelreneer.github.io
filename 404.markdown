@@ -1,0 +1,11 @@
+---
+layout: default
+title: Page Not Found
+---
+
+### Ooops!
+
+The page you are looking for doesn't seem to exist. Perhaps you can find what
+you are looking for in one of my [posts][].
+
+[posts]: http://michaelreneer.com/posts/ "Posts"

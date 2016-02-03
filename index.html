@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+        {% for post in site.posts | limit: 5 %}
+        <article class="panel panel-default post post-excerpt">
+            <div class="panel-body">
+                <header class="post-header">
+                    <h3><a href="{{ post.url | prepend: site.baseurl }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h3>
+                    {% if post.categories contains "poetry" %}
+                    <h5>by {{ post.author }}</h5>
+                    {% else %}
+                    <h5>{{ post.subtitle }}</h5>
+                    {% endif %}
+                    <time title="{{ post.date | date: "%F" }}">{{ post.date | date: "%a %d %B %Y" }}</time>
+                </header>
+                <div class="post-body">
+                    {{ post.excerpt }}
+                </div>
+            </div>
+        </article>
+        {% endfor %}

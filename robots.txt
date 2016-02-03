@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: http://michaelreneer.com/sitemap.xml

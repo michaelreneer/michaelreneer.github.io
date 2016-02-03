@@ -1,0 +1,57 @@
+.post-header {
+    margin: 0px 0px 30px 0px;
+}
+.post-header h1,
+.post-header h3 {
+    margin: 5px 0px;
+}
+.post-header h5 {
+    margin: 5px 0px;
+}
+.post-header time {
+    display: block;
+    color: #888888;
+    font-size: 0.8em;
+    font-variant: small-caps;
+    margin: 5px 0px;
+}
+.post-body a {
+    font-weight: bold;
+}
+.post-body a:hover {
+    text-decoration: underline;
+}
+.post-body {
+    margin: 20px 0px 0px 0px;
+}
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5,
+.post-body h6,
+.post-body p {
+    margin: 20px 0px;
+}
+.post-body pre {
+    margin: 20px 10px;
+}
+.post-excerpt .post-header {
+    margin: 0px 0px 20px 0px;
+}
+.post-excerpt p {
+    margin: 5px 0px;
+}
+.post-link h4 {
+    margin: 0px;
+}
+@media (min-width: $screen-sm) {
+    .post-link h4 {
+        overflow: hidden;
+    }
+}
+.post-link time {
+    color: #888888;
+    font-size: 0.8em;
+    font-variant: small-caps;
+}

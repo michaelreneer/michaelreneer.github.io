@@ -1,9 +1,7 @@
 # OS
 .DS_Store
 
-# Python
-*.py[cod]
-
-# Build
-output
-.webassets-cache
+# Jekyll
+_site
+.jekyll-metadata
+.sass-cache

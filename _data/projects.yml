@@ -1,0 +1,15 @@
+- title: Cocoa Extended Kit
+  url: https://github.com/michaelreneer/CocoaExtendedKit
+  content: An extention to Cocoa and CocoaTouch. I originally created this project to learn about git submodules and ended up finding it useful.
+
+- title: CoreBluetooth iOS Peripheral
+  url: https://github.com/michaelreneer/CoreBluetoothIOSPeripheral
+  content: An example CoreBluetooth iOS Peripheral application.
+
+- title: CoreBluetooth OSX Central
+  url: https://github.com/michaelreneer/CoreBluetoothOSXCentral
+  content: An example CoreBluetooth OS X Central application.
+
+- title: Daily Self
+  url: https://github.com/michaelreneer/DailySelf
+  content: An iOS app that helps in tracking and comparing one arbitrary set of data to another.

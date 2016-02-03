@@ -1,6 +1,0 @@
-.git
-.gitignore
-.nojekyll
-CNAME
-LICENSE.markdown
-README.markdown

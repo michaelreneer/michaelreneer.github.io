@@ -1,0 +1,29 @@
+# Site
+title: Michael Kelly Reneer
+author: Michael Kelly Reneer
+email: michaelreneer@gmail.com
+description: 
+keywords: 
+copyright: "&copy; 2012-2013 Michael Kelly Reneer."
+url: "http://michaelreneer.com"
+baseurl: ""
+defaults:
+    - scope:
+        path: ""
+        type: "posts"
+      values:
+        author: "Michael Kelly Reneer"
+        layout: "post"
+
+google_analytics: UA-36860769-1
+
+# Outputting
+permalink: /:title
+
+# Plugins
+gems:
+    - jekyll-sitemap
+
+# SASS
+sass:
+     style: compressed

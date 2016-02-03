@@ -1,0 +1,43 @@
+.site-header {
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #cccccc;
+    margin: 0px 0px 40px 0px;
+}
+.site-header a {
+    text-transform: capitalize;
+}
+.site-header h4 {
+    font-weight: normal;
+    margin: 10px 0px;
+    text-align: center;
+}
+@media (min-width: $screen-sm) {
+    .site-header h4 {
+        float: left;
+        line-height: 40px;
+    }
+}
+.site-header li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+@media (min-width: $screen-sm) {
+    .site-header li {
+        margin: 0px 0px 0px 20px;
+    }
+}
+.site-header nav {
+    margin: 10px 0px;
+}
+@media (min-width: $screen-sm) {
+    .site-header nav {
+        float: right;
+        line-height: 40px;
+    }
+}
+.site-header ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
