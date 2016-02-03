@@ -1,0 +1,11 @@
+Title: Page Not Found
+Slug: 404
+Status: hidden
+Save_As: 404.html
+
+# Ooops!
+
+The page you are looking for doesn't seem to exist. Perhaps you can find what
+you are looking for on my [blog][].
+
+[blog]: http://michaelreneer.com/blog/ "Blog"

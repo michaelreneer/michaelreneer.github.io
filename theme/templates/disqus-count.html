@@ -1,0 +1,14 @@
+{% if DISQUS_SITENAME -%}
+<a href="{{ SITEURL }}/{{ article.url }}#disqus_thread"></a>
+
+<script type="text/javascript">
+    var disqus_shortname = '{{ DISQUS_SITENAME }}';
+    (function() {
+        var dsq = document.createElement('script');
+        dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        dsq.type = 'text/javascript';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+{%- endif %}

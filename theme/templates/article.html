@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title -%}{{ article.title|striptags }} | {{ SITENAME }}{%- endblock title %}
+
+{% block content -%}
+    <article class="article-full">
+        <header>
+            <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
+            {% if article.category == "poetry" -%}
+            <h5>By {{ article.author }}</h5>
+            {%- else -%}
+            <h5>{{ article.subtitle }}</h5>
+            {%- endif %}
+            <time title="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+        </header>
+        
+        {{ article.content }}
+        
+        <aside class="clearfix">
+            {#% if article.tags -%}
+            <span>tags: 
+                {% for tag in article.tags -%}
+                <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+                {% endfor %}
+            </span>
+            {%- endif %#}
+            
+            {% include "twitter-share.html" %}
+        </aside>
+        
+        <section class="comments">
+            {% include "disqus-comments.html" %}
+        </section>
+    </article>
+{%- endblock content %}

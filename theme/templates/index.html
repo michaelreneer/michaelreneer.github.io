@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title -%}{{ SITENAME }}{%- endblock title %}
+
+{% block content -%}
+    {#
+    {% set article = dates[0] %}
+        
+    <article class="article-full">
+        <header>
+            <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
+            {% if article.category == "poetry" -%}
+            <h5>By {{ article.author }}</h5>
+            {%- else -%}
+            <h5>{{ article.subtitle }}</h5>
+            {%- endif %}
+            <time title="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+        </header>
+        
+        {{ article.content }}
+        
+        <aside class="clearfix">
+            {% if article.tags -%}
+            <p>tags: 
+                {% for tag in article.tags -%}
+                <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+                {% endfor %}
+            </p>
+            {%- endif %}
+            
+            {% include "twitter-share.html" %}
+        </aside>
+    </article>
+    #}
+    
+    {%- for article in dates[0:5] %}
+    <article class="article-full article-summary panel">
+        <header>
+            <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+            {% if article.category == "poetry" -%}
+            <h5>By {{ article.author }}</h5>
+            {%- else -%}
+            <h5>{{ article.subtitle }}</h5>
+            {%- endif %}
+            <time title="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+        </header>
+        
+        {{ article.summary }}
+    </article>
+    {%- endfor %}
+{%- endblock content %}
