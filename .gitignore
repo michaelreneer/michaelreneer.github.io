@@ -1,5 +1,6 @@
-# OS
+# OSX
 .DS_Store
+.Trashes
 
 # Jekyll
 _site
