@@ -1,5 +1,5 @@
-# michaelreneer.com
+## michaelreneer.github.io
 
 ## License
 
-Copyright (c) 2012-2013 Michael Reneer. See LICENSE for details.
+Copyright (c) 2016 Michael Reneer. See LICENSE for details.
