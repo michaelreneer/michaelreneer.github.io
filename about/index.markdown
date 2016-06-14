@@ -5,21 +5,21 @@ title: About
 
 ## Professional
 
-I am starting to learning [Python][] - it's slowly growing on me, but what I
-truly enjoy is working with [Objective-C][] and [Cocoa Touch][], and mobile
-application.
+I work at [Microsoft][] developing [Microsoft Office][] on [Apple][] devices
+using [Python][], [Objective-C][], [C++][], [Cocoa][] and [Cocoa Touch][].
+Mobile applications rock. I love [Terminal][] and [Bash][], and I'm a huge fan
+of [Git][].
 
-During these last few years I have helped architect, build, and design: [iOS][]
-applications; [ASP.NET MVC][] applications using [C#][], [Razor][], [HTML5][]
-and [Javascript][]; [Bash][] scripts; web service layers; [Android][]
-applications; and I even flirted with mobile web frameworks like [Sencha][].
-I have patented ideas, integrated with social frameworks such as [Twitter][] and
-[Facebook][], and became a huge fan of [Git][].
+Before that I helped architect, build, and design: [iOS][] applications;
+[ASP.NET MVC][] applications using [C#][], [Razor][], [HTML5][] and
+[Javascript][]; bash scripts; web service layers; and I even flirted with mobile
+web frameworks like [Sencha][]. I have patented ideas, integrated with social
+frameworks such as [Twitter][] and [Facebook][].
 
 Going back further, I worked with [Flex][], [Java][], and [Maven][] to build
-everything from kiosk software to common application frameworks.
+everything from kiosk software to ui frameworks.
 
-And before that, I spent my time tinkering with [PHP][], [C++][], Java, HTML,
+And even further back, I spent my time tinkering with [PHP][], C++, Java, HTML,
 CSS, Javascript, and [Illustrator][], and going to University.
 
 ## Personal
@@ -28,17 +28,18 @@ CSS, Javascript, and [Illustrator][], and going to University.
 
 I love my family most. My wife can be found selling hand-made quiet books on her
 [Etsy][] store [Birdie And Buttons][]. My oldest daughter is very busy learning
-to swim and the younger one can be found following the older one around.
+to swim and my younger one is often following my oldest around.
 
 I play as much soccer as possible when not playing board games. Many of my
-favorite games have strong investing mechanics: [18XX][], [Age of Steam][],
-[Hansa Teutonica][], and [Imperial][], and can take longer than 3 hours to play.
+favorite board games have strong investing mechanics: [18XX][],
+[Age of Steam][], [Hansa Teutonica][], and [Imperial][], and can take longer
+than 3 hours to play.
 
 I spend some of my time writing poetry.
 
-[Seattle][] is my new home. I enjoy many outdoor activities: longboarding, mountain
-biking, camping, snowshoeing, and snowboarding - though I prefer snowshoeing to
-the others. I do not own a television, I find thought games like the
+[Seattle][] is my home. I enjoy many outdoor activities: longboarding, mountain
+biking, camping, snowshoeing, and snowboarding - I prefer snowshoeing to the
+others. I do not own a television, I find thought games like the
 [dollar auction][] fun, and there is little better than a good [IPA][].
 
 ## Site
@@ -50,15 +51,17 @@ source and theme for [this site][] can be found on [GitHub][], and the site
 is hosted on [GitHub Pages][].
 
 In addition to Jekyll, Markdown, and all the cool HTML and CSS tech, I am using
-[YAML][], [Liquid][], and [Rouge][] either as a plugin for, or as a dependency of, Jekyll.
+[YAML][], [Liquid][], and [Rouge][] either as a plugin for, or as a dependency
+of, Jekyll.
 
 Thanks.
 
 [profile picture]: /theme/images/profile-picture.png "Profile Picture"
 
-[android]: http://developer.android.com "Android"
+[apple]: http://www.apple.com "Apple"
 [asp.net mvc]: http://www.asp.net/mvc "ASP.NET MVC"
 [bash]: http://www.gnu.org/software/bash/manual/bashref.html "Bash"
+[cocoa]: "Cocoa"
 [cocoa touch]: http://developer.apple.com/technologies/ios/cocoa-touch.html "Cocoa Touch"
 [c#]: http://msdn.microsoft.com/en-us/vstudio/hh341490.aspx "C#"
 [c++]: http://www.cplusplus.com "C++"
@@ -71,11 +74,14 @@ Thanks.
 [java]: http://www.oracle.com/technetwork/java/index.html "Java"
 [javascript]: http://www.w3schools.com/js/ "Javascript"
 [maven]: http://maven.apache.org "Maven"
+[microsoft]: http://www.microsoft.com "Microsoft"
+[microsoft office]: "Microsoft Office"
 [objective-c]: http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html "Objective-C"
 [php]: http://php.net "PHP"
 [python]: http://www.python.org "Python"
 [razor]: http://www.asp.net/web-pages/tutorials/basics/2-introduction-to-asp-net-web-programming-using-the-razor-syntax "Razor"
 [sencha]: http://www.sencha.com "Sencha"
+[terminal]: "Terminal"
 [twitter]: http://dev.twitter.com/ "Twitter"
 
 [18xx]: http://boardgamegeek.com/wiki/page/18xx "18XX"
