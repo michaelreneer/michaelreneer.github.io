@@ -20,7 +20,7 @@ project. Now here you are reading a hello world blog entry written in
 
 I am currently using OS X and the Terminal app. Here's what I did ...
 
-## Environment
+## Python
 
 First install packages [pip][], [virtualenv][], and [virtualenvwrapper][].
 
@@ -45,7 +45,7 @@ Please read the [virtualenvwrapper reference][].
 
 ## Pelican
 
-Create the virtual environment.
+Create a virtual environment for the project.
 
 ~~~ bash
 mkvirtualenv michaelreneer.github.io
@@ -82,7 +82,7 @@ Please read the [pelican documentation][].
 
 ## GitHub
 
-I also experimented a little with how the project lives in GitHub and locally.
+I have experimented a little with how the project lives in GitHub and locally.
 To start, the static html in the `master` branch of the project named
 `USERNAME.github.io` is served up as your user page. Free hosting.
 
@@ -91,15 +91,15 @@ the `master` branch. This was nice because I had only one branch to manage; but
 because everything was in one branch, managing pull requests would be more
 complicated since I would only want to merge changes that updated the source.
 
-So I ended up pushing the source to the `source` branch and the content to the
-`master` branch. This way I can automatically decline all pull requests to
-the `master` branch. Locally, I have each branch cloned into a different
-directory named for the branch.
+I ended up pushing the source to the `source` branch and the content to the
+`master` branch. This way I can automatically decline all pull requests to the
+`master` branch. Locally, I have each branch cloned into a different directory
+named for the branch.
 
-I will eventually script the process so that immediately after I
-push to the `source` branch, my pelican build runs, copies its output to the
-`master` branch, and finished by pushing the `master` branch. Eliminating any
-branch switching antics.
+Eventually, I will script the process so that immediately after I push to the
+`source` branch, my pelican build runs, copies its output to the `master`
+branch, and finished by pushing the `master` branch. Eliminating any branch
+switching antics.
 
 [github]: http://github.com "GitHub"
 [github pages]: http://pages.github.com "GitHub Pages"
@@ -113,5 +113,5 @@ branch switching antics.
 [pip]: http://pypi.python.org/pypi/pip "pip"
 [virtualenv]: http://pypi.python.org/pypi/virtualenv "virtualenv"
 [virtualenvwrapper]: http://pypi.python.org/pypi/virtualenvwrapper "virtualenvwrapper"
-[virtualenvwrapper reference]: http://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html "virtualenvwrapper goodies"
+[virtualenvwrapper reference]: http://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html "virtualenvwrapper reference"
 [wordpress]: http://wordpress.com "WordPress"

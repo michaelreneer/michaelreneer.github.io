@@ -5,58 +5,103 @@ categories: computer science
 tags: objective-c, ios, osx, style
 ---
 
-Understanding an algorithm or some bit code can be difficult, but reading it
-should not be. This means that a coding guideline should be agreed on and used.
-It also means that when working with someone elses code, it is more important
-to be consistent than creative. When I find myself owning code in `objective-c`
-I prefer to follow Apple's exisiting [Coding Guidelines for Cocoa][] augmented
-with the following style:
+Understanding an algorithm or some bit code can be difficult, but reading code
+should not be. When working with someone elses code, it is more important to be
+consistent than creative - so you should probably follow the guidelines they
+provide. In my `objective-c` code I prefer to follow Apple's exisiting
+[Coding Guidelines for Cocoa][] formatted with [clang format][] using the
+follwing [style options][]:
 
-### Whitespace
+~~~ yaml
+---
+Language: Cpp
+AccessModifierOffset: -4
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: false
+AlignEscapedNewlinesLeft: true
+AlignOperands: true
+AlignTrailingComments: true
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortBlocksOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: false
+AlwaysBreakTemplateDeclarations: true
+BinPackArguments: true
+BinPackParameters: false
+BraceWrapping:
+  AfterClass: false
+  AfterControlStatement: false
+  AfterEnum: false
+  AfterFunction: false
+  AfterNamespace: false
+  AfterObjCDeclaration: false
+  AfterStruct: false
+  AfterUnion: false
+  BeforeCatch: false
+  BeforeElse: false
+  IndentBraces: false
+BreakBeforeBinaryOperators: None
+BreakBeforeBraces: Attach
+BreakBeforeTernaryOperators: true
+BreakConstructorInitializersBeforeComma: true
+ColumnLimit: 0
+CommentPragmas: '^ IWYU pragma:'
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+ConstructorInitializerIndentWidth: 4
+ContinuationIndentWidth: 4
+Cpp11BracedListStyle: true
+DerivePointerAlignment: false
+DisableFormat: false
+ExperimentalAutoDetectBinPacking: false
+ForEachMacros: [ foreach, Q_FOREACH, BOOST_FOREACH ]
+IncludeCategories: 
+  - Regex: '^"(llvm|llvm-c|clang|clang-c)/'
+    Priority: 2
+  - Regex: '^(<|"(gtest|isl|json)/)'
+    Priority: 3
+  - Regex: '.*'
+    Priority: 1
+IndentCaseLabels: true
+IndentWidth: 4
+IndentWrappedFunctionNames: false
+KeepEmptyLinesAtTheStartOfBlocks: false
+MacroBlockBegin: ''
+MacroBlockEnd: ''
+MaxEmptyLinesToKeep: 1
+NamespaceIndentation: None
+ObjCBlockIndentWidth: 4
+ObjCSpaceAfterProperty: true
+ObjCSpaceBeforeProtocolList: true
+PenaltyBreakBeforeFirstCallParameter: 19
+PenaltyBreakComment: 300
+PenaltyBreakFirstLessLess: 120
+PenaltyBreakString: 1000
+PenaltyExcessCharacter: 1000000
+PenaltyReturnTypeOnItsOwnLine: 60
+PointerAlignment: Right
+ReflowComments: false
+SortIncludes: true
+SpaceAfterCStyleCast: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 1
+SpacesInAngles: false
+SpacesInContainerLiterals: false
+SpacesInCStyleCastParentheses: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+Standard: Cpp11
+TabWidth: 4
+UseTab: ForIndentation
+...
+~~~
 
-- Use spaces, not tabs.
-- Do not wrap lines.
-- Do not open braces on a new line.
-- End files with a newline.
-- Use whitespace to group logical blocks of code.
-
-### Structure
-
-- Do not `#import` in the header, except the superclass, protocols, and enums.
-- Import root frameworks, not files from those frameworks.
-- Use #pragma marks to logically group code.
-
-### Naming
-
-- Use descriptive property names.
-- Use descriptive method names.
-- Use namespace prefix for classes.
-
-### Comments
-
-- Prefer self describing code to comments where possible.
-- Use `TODO:` `FIXME:` `!!!:` and `???:` where appropriate.
-
-### Declarations
-
-- Do not declare iVars.
-- Do not declare methods in the private interface.
-- Do not put a space between the dereferencing oporator (asterisk) and the
-    variable.
-- Do not put a space between the type and the protocol it conforms to.
-- Do not accessing iVars, except in `-init`, `-dealloc`, or the accessors for
-    it's property.
-- Use namespace prefix for functions.
-
-### Expressions
-
-- Use dot notation to access properties.
-- Use message notation to call a method.
-- Use literals.
-- Use `YES` or `NO` not `true` or `false`.
-- Use explicit comparisons, except for `BOOL` type's.
-
-This is a living document.
-
+[clang format]: http://clang.llvm.org/docs/ClangFormat.html "Clang Format"
 [coding guidelines for cocoa]: http://developer.apple.com/library/mac/#documentation/cocoa/conceptual/codingguidelines/codingguidelines.html "Coding Guidelines For Cocoa"
-
+[style options]: http://clang.llvm.org/docs/ClangFormatStyleOptions.html "Style Options"

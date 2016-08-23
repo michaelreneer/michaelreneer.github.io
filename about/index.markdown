@@ -12,15 +12,15 @@ of [Git][].
 
 Before that I helped architect, build, and design: [iOS][] applications;
 [ASP.NET MVC][] applications using [C#][], [Razor][], [HTML5][] and
-[Javascript][]; bash scripts; web service layers; and I even flirted with mobile
-web frameworks like [Sencha][]. I have patented ideas, integrated with social
+[Javascript][]; bash scripts; web service layers; and I flirted with mobile web
+frameworks like [Sencha][]. I have patented ideas and integrated with social
 frameworks such as [Twitter][] and [Facebook][].
 
 Going back further, I worked with [Flex][], [Java][], and [Maven][] to build
 everything from kiosk software to ui frameworks.
 
-And even further back, I spent my time tinkering with [PHP][], C++, Java, HTML,
-CSS, Javascript, and [Illustrator][], and going to University.
+And even further back, I spent my time exploring [PHP][], C++, Java, HTML, CSS
+Javascript, and [Illustrator][], and going to University.
 
 ## Personal
 
@@ -61,8 +61,8 @@ Thanks.
 [apple]: http://www.apple.com "Apple"
 [asp.net mvc]: http://www.asp.net/mvc "ASP.NET MVC"
 [bash]: http://www.gnu.org/software/bash/manual/bashref.html "Bash"
-[cocoa]: "Cocoa"
-[cocoa touch]: http://developer.apple.com/technologies/ios/cocoa-touch.html "Cocoa Touch"
+[cocoa]: https://developer.apple.com/macos/ "Cocoa"
+[cocoa touch]: https://developer.apple.com/ios/ "Cocoa Touch"
 [c#]: http://msdn.microsoft.com/en-us/vstudio/hh341490.aspx "C#"
 [c++]: http://www.cplusplus.com "C++"
 [facebook]: http://developers.facebook.com "Facebook"
@@ -75,18 +75,18 @@ Thanks.
 [javascript]: http://www.w3schools.com/js/ "Javascript"
 [maven]: http://maven.apache.org "Maven"
 [microsoft]: http://www.microsoft.com "Microsoft"
-[microsoft office]: "Microsoft Office"
+[microsoft office]: https://www.office.com "Microsoft Office"
 [objective-c]: http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html "Objective-C"
 [php]: http://php.net "PHP"
 [python]: http://www.python.org "Python"
 [razor]: http://www.asp.net/web-pages/tutorials/basics/2-introduction-to-asp-net-web-programming-using-the-razor-syntax "Razor"
 [sencha]: http://www.sencha.com "Sencha"
-[terminal]: "Terminal"
+[terminal]: https://en.wikipedia.org/wiki/Terminal_(OS_X) "Terminal"
 [twitter]: http://dev.twitter.com/ "Twitter"
 
 [18xx]: http://boardgamegeek.com/wiki/page/18xx "18XX"
 [age of steam]: http://boardgamegeek.com/boardgame/4098/age-of-steam "Age of Steam"
-[birdie and buttons]: http://www.etsy.com/shop/BirdieAndButtons "Birdie And Buttons"
+[birdie and buttons]: http://www.etsy.com/shop/BirdieAndButtons "Birdie and Buttons"
 [dollar auction]: http://en.wikipedia.org/wiki/Dollar_auction "Dollar Auction"
 [etsy]: http://www.etsy.com "Etsy"
 [hansa teutonica]: http://boardgamegeek.com/boardgame/43015/hansa-teutonica "Hansa Teutonica"

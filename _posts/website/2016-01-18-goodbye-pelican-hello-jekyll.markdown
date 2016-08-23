@@ -6,12 +6,9 @@ tags: blog, jekyll, pelican
 ---
 
 It was nice to use [Pelican][] as a way to learn [Python][], but [Jekyll][] is
-simply more integrated into [GitHub Pages][]. The transition is elegant.
+simply more integrated into [GitHub Pages][].
 
-## Environment
-
-Don't use the system Ruby.
-...
+## Ruby
 
 First, install a ruby environment.
 
@@ -42,10 +39,12 @@ jekyll new michaelreneer.github.io
 cd ~/Documents/Developer/michaelreneer.github.io
 ~~~
 
-Create repository called `Gemfile` and add the line `gem 'github-pages'`.
+Create repository called `Gemfile` containing the following...
 
-    source 'https://rubygems.org'
-    gem 'github-pages'
+~~~ ruby
+source 'https://rubygems.org'
+gem 'github-pages'
+~~~
 
 Install repository.
 
@@ -61,7 +60,9 @@ bundle exec jekyll serve
 
 ## GitHub
 
-
+Locally, you will be able to view your site, but there is no need to push the
+generated files to github. Github will generate the site for you if you push
+the source to the `master` branch.
 
 [github pages]: http://pages.github.com "GitHub Pages"
 [bundler]: http:// "Bundler"
