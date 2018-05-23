@@ -1,7 +1,3 @@
-- title: Cocoa Extended Kit
-  url: https://github.com/michaelreneer/CocoaExtendedKit
-  description: An extention to the Cocoa and CocoaTouch frameworks.
-
 - title: CoreBluetooth Example
   url: https://github.com/michaelreneer/CoreBluetoothExample
   description: Some example CoreBluetooth Peripheral and Central applications.
@@ -9,7 +5,3 @@
 - title: Algorithms
   url: https://github.com/michaelreneer/Algorithms
   description: Some common algorithms.
-
-- title: Daily Self
-  url: https://github.com/michaelreneer/DailySelf
-  description: An iOS application that helps in tracking and comparing one arbitrary set of data to another.
