@@ -1,7 +1,7 @@
 - title: CoreBluetooth Example
   url: https://github.com/michaelreneer/CoreBluetoothExample
-  description: Some example CoreBluetooth Peripheral and Central applications.
+  description: Example CoreBluetooth Peripheral and Central applications.
 
 - title: Algorithms
-  url: https://github.com/michaelreneer/Algorithms
-  description: Some common algorithms.
+  url: https://github.com/michaelreneer/algorithms
+  description: A collection of algorithms implemented in c and python.
