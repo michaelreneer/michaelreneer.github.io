@@ -12,20 +12,20 @@ simply more integrated into [GitHub Pages][].
 
 First, install a ruby environment.
 
-``` bash
+```bash
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 rvm install 2.2
 ```
 
 Begin using the environment.
 
-``` bash
+```bash
 rvm use 2.2
 ```
 
 Install [Bundler][].
 
-``` bash
+```bash
 ruby install bundler
 ```
 
@@ -33,7 +33,7 @@ ruby install bundler
 
 Setup the project.
 
-``` bash
+```bash
 cd ~/Documents/Developer/
 jekyll new michaelreneer.github.io
 cd ~/Documents/Developer/michaelreneer.github.io
@@ -48,13 +48,13 @@ gem 'github-pages'
 
 Install repository.
 
-``` bash
+```bash
 bundle install
 ```
 
 Run Jekyll.
 
-``` bash
+```bash
 bundle exec jekyll serve
 ```
 

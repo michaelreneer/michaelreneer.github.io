@@ -12,7 +12,7 @@ provide. In my `objective-c` code I prefer to follow Apple's exisiting
 [Coding Guidelines for Cocoa][] formatted with [clang format][] using the
 follwing [style options][]:
 
-``` yaml
+```yaml
 ---
 Language: Cpp
 AccessModifierOffset: -4
