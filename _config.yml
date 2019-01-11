@@ -2,11 +2,12 @@
 title: Michael Kelly Reneer
 author: Michael Kelly Reneer
 email: michaelreneer@gmail.com
-description: 
-keywords: 
-copyright: "&copy; 2019 Michael Kelly Reneer."
+description:
+keywords:
 url: "http://michaelreneer.com"
 baseurl: ""
+
+# Front Matter Defaults
 defaults:
     - scope:
         path: ""
