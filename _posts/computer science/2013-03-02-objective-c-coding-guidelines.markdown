@@ -12,7 +12,7 @@ provide. In my `objective-c` code I prefer to follow Apple's exisiting
 [Coding Guidelines for Cocoa][] formatted with [clang format][] using the
 follwing [style options][]:
 
-~~~ yaml
+``` yaml
 ---
 Language: Cpp
 AccessModifierOffset: -4
@@ -59,7 +59,7 @@ DerivePointerAlignment: false
 DisableFormat: false
 ExperimentalAutoDetectBinPacking: false
 ForEachMacros: [ foreach, Q_FOREACH, BOOST_FOREACH ]
-IncludeCategories: 
+IncludeCategories:
   - Regex: '^"(llvm|llvm-c|clang|clang-c)/'
     Priority: 2
   - Regex: '^(<|"(gtest|isl|json)/)'
@@ -100,7 +100,7 @@ Standard: Cpp11
 TabWidth: 4
 UseTab: ForIndentation
 ...
-~~~
+```
 
 [clang format]: http://clang.llvm.org/docs/ClangFormat.html "Clang Format"
 [coding guidelines for cocoa]: http://developer.apple.com/library/mac/#documentation/cocoa/conceptual/codingguidelines/codingguidelines.html "Coding Guidelines For Cocoa"

@@ -24,22 +24,22 @@ I am currently using OS X and the Terminal app. Here's what I did ...
 
 First install packages [pip][], [virtualenv][], and [virtualenvwrapper][].
 
-~~~ bash
+``` bash
 sudo easy_install pip
 sudo pip install virtualenv
 sudo pip install virtualenvwrapper
-~~~
+```
 
 Update `~/.bash_profile` by adding:
 
-~~~ bash
+``` bash
 export WORKON_HOME="${HOME}/.virtualenvs"
 export PROJECT_HOME="${HOME}/Documents/Developer"
 export VIRTUALENVWRAPPER_SCRIPT="/usr/local/bin/virtualenvwrapper.sh"
 source "/usr/local/bin/virtualenvwrapper_lazy.sh"
 export PIP_VIRTUALENV_BASE="${WORKON_HOME}"
 export PIP_RESPECT_VIRTUALENV=true
-~~~
+```
 
 Please read the [virtualenvwrapper reference][].
 
@@ -47,36 +47,36 @@ Please read the [virtualenvwrapper reference][].
 
 Create a virtual environment for the project.
 
-~~~ bash
+``` bash
 mkvirtualenv michaelreneer.github.io
-~~~
+```
 
 Setup the project.
 
-~~~ bash
+``` bash
 mkdir ~/Documents/Developer/michaelreneer.github.io
 cd ~/Documents/Developer/michaelreneer.github.io
 setvirtualenvproject
-~~~
+```
 
 Install the pelican and Markdown packages.
 
-~~~ bash
+``` bash
 pip install pelican Markdown
-~~~
+```
 
 Run pelican quickstart.
 
-~~~ bash
+``` bash
 pelican-quickstart
-~~~
+```
 
 Install [pelican-plugins][].
 
-~~~ bash
+``` bash
 cd ~/Documents/Developer/
 git clone https://github.com/getpelican/pelican-plugins
-~~~
+```
 
 Please read the [pelican documentation][].
 
