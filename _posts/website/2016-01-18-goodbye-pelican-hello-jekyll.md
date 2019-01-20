@@ -41,7 +41,7 @@ cd ~/Documents/Developer/michaelreneer.github.io
 
 Create repository called `Gemfile` containing the following...
 
-``` ruby
+```ruby
 source 'https://rubygems.org'
 gem 'github-pages'
 ```
