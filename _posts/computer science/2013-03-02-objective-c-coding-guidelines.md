@@ -6,11 +6,11 @@ tags: objective-c, ios, osx, style
 ---
 
 Understanding an algorithm or some bit code can be difficult, but reading code
-should not be. When working with someone elses code, it is more important to be
+should not be. When working with someone else's code, it is more important to be
 consistent than creative - so you should probably follow the guidelines they
-provide. In my `objective-c` code I prefer to follow Apple's exisiting
+provide. In my `objective-c` code I prefer to follow Apple's existing
 [Coding Guidelines for Cocoa][] formatted with [clang format][] using the
-follwing [style options][]:
+following [style options][]:
 
 ```yaml
 ---
