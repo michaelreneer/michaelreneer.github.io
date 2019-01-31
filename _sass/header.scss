@@ -1,20 +1,16 @@
 .site-header {
-    background-color: #f4f4f4;
-    border-bottom: 1px solid #cccccc;
-    margin: 0px 0px 40px 0px;
-}
-.site-header a {
-    text-transform: capitalize;
+    margin: 0px 0px 20px 0px;
 }
 .site-header h4 {
     font-weight: normal;
-    margin: 10px 0px;
+    margin: 30px 0px 0px 0px;
     text-align: center;
 }
 @media (min-width: $screen-sm) {
     .site-header h4 {
         float: left;
         line-height: 40px;
+        margin: 30px 0px 0px 20px;
     }
 }
 .site-header li {
@@ -27,12 +23,13 @@
     }
 }
 .site-header nav {
-    margin: 10px 0px;
+    margin: 10px 0px 0px 0px;
 }
 @media (min-width: $screen-sm) {
     .site-header nav {
         float: right;
         line-height: 40px;
+        margin: 30px 20px 0px 0px;
     }
 }
 .site-header ul {
