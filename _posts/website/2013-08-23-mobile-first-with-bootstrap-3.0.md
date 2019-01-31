@@ -6,7 +6,7 @@ tags: html5, css, bootstrap, responsive, mobile first
 ---
 
 [Bootstrap 3.0][] was [released][] a couple of weeks ago and there is plenty of
-information on thier blog about what this new version brings to the table,
+information on their blog about what this new version brings to the table,
 improvements, how to migrate, etc ... My experience migrating to Bootstrap 3.0
 has been super positive, which probably isn't much perspective when I am only
 using the grid system and some utilities, but: give credit where credit's due.

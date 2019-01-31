@@ -5,67 +5,48 @@ categories: website
 tags: blog, jekyll, pelican
 ---
 
-It was nice to use [Pelican][] as a way to learn [Python][], but [Jekyll][] is
-simply more integrated into [GitHub Pages][].
+It was fun to use [Pelican](http://github.com/getpelican/pelican) to
+learn [Python](http://www.python.org), but [Jekyll](http://jekyllrb.com) is
+simply more integrated into [GitHub Pages](http://pages.github.com).
 
-## Ruby
-
-First, install a ruby environment.
-
-```bash
-\curl -sSL https://get.rvm.io | bash -s stable --ruby
-rvm install 2.2
-```
-
-Begin using the environment.
+Install [Bundler](https://bundler.io/).
 
 ```bash
-rvm use 2.2
+gem install --user-install bundler
 ```
 
-Install [Bundler][].
+Create a project.
 
 ```bash
-ruby install bundler
+mkdir "${HOME}/Documents/Developer/michaelreneer.github.io"
+cd "${HOME}/Documents/Developer/michaelreneer.github.io"
 ```
 
-## Jekyll
-
-Setup the project.
-
-```bash
-cd ~/Documents/Developer/
-jekyll new michaelreneer.github.io
-cd ~/Documents/Developer/michaelreneer.github.io
-```
-
-Create repository called `Gemfile` containing the following...
+Create a file named `Gemfile` containing the following...
 
 ```ruby
 source 'https://rubygems.org'
-gem 'github-pages'
+gem 'github-pages', group: :jekyll_plugins
 ```
 
-Install repository.
+Install Ruby dependencies.
 
 ```bash
-bundle install
+bundle install --path vendor/bundle
 ```
 
-Run Jekyll.
+Create a Jekyll site.
+
+```bash
+bundle exec jekyll new . --force
+```
+
+Run Jekyll locally.
 
 ```bash
 bundle exec jekyll serve
 ```
 
-## GitHub
-
-Locally, you will be able to view your site, but there is no need to push the
-generated files to github. Github will generate the site for you if you push
-the source to the `master` branch.
-
-[github pages]: http://pages.github.com "GitHub Pages"
-[bundler]: http:// "Bundler"
-[jekyll]: http://jekyllrb.com "Jekyll"
-[pelican]: http://github.com/getpelican/pelican "Pelican"
-[python]: http://www.python.org "Python"
+To publish your changes on your site, push your changes to the `master` branch
+of your remote repository on GitHub. GitHub Pages will manage your site's build
+process

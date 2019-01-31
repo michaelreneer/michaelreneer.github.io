@@ -44,4 +44,4 @@ no one had stolen the schools saxophone
 no mysterious ransom demanding  
 it was a beautiful happy birthday  
 and every little magic invited  
-because wisp was growing oder today  
+because wisp was growing older today  
