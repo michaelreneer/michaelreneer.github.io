@@ -7,6 +7,8 @@ keywords:
 url: "http://michaelreneer.com"
 baseurl: ""
 
+google_analytics: UA-36860769-1
+
 # Front Matter Defaults
 defaults:
     - scope:
@@ -16,13 +18,12 @@ defaults:
         author: "Michael Kelly Reneer"
         layout: "post"
 
-google_analytics: UA-36860769-1
 
 # Outputting
 permalink: /:title
 
 # Plugins
-gems:
+plugins:
     - jekyll-sitemap
 
 # SASS
