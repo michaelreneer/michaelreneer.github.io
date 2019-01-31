@@ -12,5 +12,5 @@ some awesome dance moves; and my youngest daughter is endlessly asking why.
 
 I play soccer and board games in my free time;
 [Markdown](http://daringfireball.net/projects/markdown) is awesome;
-[dollar auctions](http://en.wikipedia.org/wiki/Dollar_auction) are funny; and
+[dollar auctions](http://en.wikipedia.org/wiki/Dollar_auction) are fun; and
 [Seattle](https://www.google.com/maps/place/Seattle) is my home.
