@@ -3,15 +3,11 @@ layout: default
 title: Posts
 ---
 
-        <div class="row">
-            {% for post in site.posts %}
-            <div class="col-sm-6">
-                <article class="panel panel-default post-link">
-                    <div class="panel-body">
-                        <h4><a href="{{ post.url | prepend: site.baseurl }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h4>
-                        <time title="{{ post.date | date: "%F" }}">{{ post.date | date: "%a %d %B %Y" }}</time>
-                    </div>
-                </article>
-            </div>
-            {% endfor %}
+      <div class="posts">
+{%- for post in site.posts %}
+        <div class="post-link card">
+          <h2><a href="{{ post.url | prepend: site.baseurl }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
+          <time class="post-time" title="{{ post.date | date: "%F" }}">{{ post.date | date: "%a %d %B %Y" }}</time>
         </div>
+{%- endfor %}
+      </div>

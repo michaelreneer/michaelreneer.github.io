@@ -3,11 +3,16 @@
 @charset "utf-8";
 
 @import "variables";
-@import "default";
+@import "defaults";
+
+@import "card";
 @import "syntax-highlighting";
 
+@import "container";
 @import "header";
+@import "nav";
+@import "content";
 @import "footer";
 
-@import "page";
 @import "post";
+@import "posts";

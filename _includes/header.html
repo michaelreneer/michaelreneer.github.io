@@ -1,14 +1,3 @@
-    <header class="site-header">
-        <div class="container">
-            <h4><a href="{{ "/" | prepend: site.baseurl }}" title="{{ site.title }}">{{ site.title }}</a></h4>
-            {% if site.data.menu %}
-            <nav>
-                <ul>
-                    {% for item in site.data.menu %}
-                    <li><a href="{{ item.url | prepend: site.baseurl }}" title="{{ item.title }}">{{ item.title }}</a></li>
-                    {% endfor %}
-                </ul>
-            </nav>
-            {% endif %}
-        </div>
+    <header class="header">
+      <a href="{{ "/" | prepend: site.baseurl }}" title="{{ site.title }}">{{ site.title }}</a>
     </header>

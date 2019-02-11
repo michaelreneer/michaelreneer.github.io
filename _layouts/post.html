@@ -2,18 +2,15 @@
 layout: default
 ---
 
-        <article class="post">
-            <header class="post-header">
-                <h1><a href="{{ page.url | prepend: site.baseurl }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
-                {% if page.categories contains "poetry" %}
-                <h5>by {{ page.author }}</h5>
-                {% else %}
-                <h5>{{ page.subtitle }}</h5>
-                {% endif %}
-                <time title="{{ page.date | date: "%F" }}">{{ page.date | date: "%a %d %B %Y" }}</time>
-            </header>
-            <div class="post-body">
-                {{ content }}
-            </div>
-            </section>
-        </article>
+      <article class="post">
+        <header class="post-header">
+          <h1><a href="{{ page.url | prepend: site.baseurl }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+{%- if page.categories contains "poetry" %}
+          <p>by {{ page.author }}</p>
+{%- else %}
+          <p>{{ page.subtitle }}</p>
+{%- endif %}
+          <time class="post-time" title="{{ page.date | date: "%F" }}">{{ page.date | date: "%a %d %B %Y" }}</time>
+        </header>
+{{ content }}
+      </article>

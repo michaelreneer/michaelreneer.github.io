@@ -1,22 +1,15 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta name="author" content="{{ site.author }}">
-    <meta name="keywords" content="{{ site.keywords }}">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <meta name="author" content="{{ site.author }}">
+  <meta name="keywords" content="{{ site.keywords }}">
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/vendor/normalize.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-    <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script>window.html5 || document.write('<script src="{{ "/js/vendor/html5shiv.min.js" | prepend: site.baseurl }}"><\/script>')</script>
-    <![endif]-->
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>

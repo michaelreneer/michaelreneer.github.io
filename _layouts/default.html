@@ -4,15 +4,17 @@
 {% include head.html %}
 
 <body>
-    {% include header.html %}
+  <div class="container">
+{% include header.html %}
+{% include nav.html %}
+    <main class="content">
+{{ content }}
+    </main>
+{% include footer.html %}
+  </div>
 
-    <div class="container">
-        {{ content }}
-    </div>
-
-    {% include footer.html %}
-    {% if jekyll.environment == "production" %}
-    {% include analytics.html %}
-    {% endif %}
+{% if jekyll.environment == "production" %}
+{% include analytics.html %}
+{% endif %}
 </body>
 </html>

@@ -1,12 +1,11 @@
-    <footer class="footer">
-{%- if site.data.social %}
+    <nav class="nav">
+{%- if site.data.menu %}
       <ul>
-{%- for item in site.data.social %}
+{%- for item in site.data.menu %}
         <li>
           <a href="{{ item.url | prepend: site.baseurl }}" title="{{ item.title }}">{{ item.title }}</a>
         </li>
 {%- endfor %}
       </ul>
-      <span>&copy; 2019 Michael Kelly Reneer.</span>
 {%- endif %}
-    </footer>
+    </nav>
